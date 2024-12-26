@@ -1,0 +1,46 @@
+* C2RUST Project [5/7]
+** DONE look at the paper for c2rust dataset
+CLOSED: [2024-12-17 Tue 15:13]
+*** DONE Code trans ocean: uses [[https://rosettacode.org/wiki/Rosetta_Code]] for pair data
+CLOSED: [2024-12-13 Fri 16:28]
+**** DONE need to checkout Rosetta code
+CLOSED: [2024-12-13 Fri 16:20]
+Rust page here [[https://rosettacode.org/wiki/Category:Rust ]]git repo here https://github.com/rust-rosetta/rust-rosetta/tree/master/tasks. They includes a huge number of different tasks all standalone. Most of the times are standalone. Differnet language solutions can have different outputs.
+**** Maybe we can also use  [[WikiFunctions][https://www.wikifunctions.org/wiki/Wikifunctions:Catalogue]]
+*** DONE RustRepoTrans:
+CLOSED: [2024-12-17 Tue 15:13]
+**** 375 tasks each one is a function from a rust rewrite of a popular repo
+**** C++, Java, Python -> Rust
+**** Provide Dependencies in Rust
+**** Use similarity and LLM to find corresponding pair in original repo
+**** Claude-3.5 > GPT-4 and DeepseekCoderV2-16B >~ llama3.1-8b
+**** TODO Also add this to Repo maybe?
+** TODO look at the paper for minimum pair examples
+** TODO checkout semantic specification stuff
+*** C semantic specification stuff here: [[https://github.com/kframework/c-semantics/tree/master/semantics/c]]
+** DONE add some of the Rust by example book rust code to the repo
+CLOSED: [2024-12-20 Fri 14:43]
+*** DONE First add a few in =/example=, update milos after this.
+CLOSED: [2024-12-19 Thu 12:24]
+*** DONE Then add the script to craw all the examples from book.
+CLOSED: [2024-12-20 Fri 14:42]
+** DONE add some tools to check out code trans ocean
+CLOSED: [2024-12-17 Tue 15:14]
+** DONE check milo's pull request
+CLOSED: [2024-12-16 Mon 11:52]
+** DONE do C translation for all rust programs in rust by examples dataset
+CLOSED: [2024-12-26 Thu 12:02]
+*** DONE First filter out all examples that is not compilable
+CLOSED: [2024-12-26 Thu 12:02]
+*** DONE Then run the translation with gpt-4o mini
+CLOSED: [2024-12-26 Thu 12:02]
+** TODO Export all C translations to C files in the repo
+** TODO Start fixing the C files
+* FSE demo paper for exlong
+** TODO write abstract section
+** TODO write usage section
+** TODO bib.bib from icse25 to the fse-demo
+** TODO add authors
+* TA for Dependable Computing
+** DONE Grade the papers
+CLOSED: [2024-12-16 Mon 11:44]
