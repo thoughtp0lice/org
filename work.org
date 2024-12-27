@@ -37,10 +37,16 @@ CLOSED: [2024-12-26 Thu 12:02]
 ** TODO Export all C translations to C files in the repo
 ** TODO Start fixing the C files
 * FSE demo paper for exlong
-** TODO write abstract section
+** DONE write abstract section
+CLOSED: [2024-12-27 Fri 10:29]
 ** TODO write usage section
-** TODO bib.bib from icse25 to the fse-demo
-** TODO add authors
+** DONE bib.bib from icse25 to the fse-demo
+CLOSED: [2024-12-27 Fri 10:29]
+** DONE add authors
+CLOSED: [2024-12-27 Fri 10:29]
+** TODO add CLIs for full pipeline
+*** TODO script for github link -> formatted tests
+*** TODO srtipt for porject & MUT name -> formated test
 * TA for Dependable Computing
 ** DONE Grade the papers
 CLOSED: [2024-12-16 Mon 11:44]
