@@ -1,4 +1,4 @@
-* C2RUST Project [5/7]
+* C2RUST Project [6/9]
 ** DONE look at the paper for c2rust dataset
 CLOSED: [2024-12-17 Tue 15:13]
 *** DONE Code trans ocean: uses [[https://rosettacode.org/wiki/Rosetta_Code]] for pair data
@@ -34,8 +34,9 @@ CLOSED: [2024-12-26 Thu 12:02]
 CLOSED: [2024-12-26 Thu 12:02]
 *** DONE Then run the translation with gpt-4o mini
 CLOSED: [2024-12-26 Thu 12:02]
-** TODO Export all C translations to C files in the repo
-** TODO Start fixing the C files
+** DONE Export all C translations to C files in the repo
+CLOSED: [2024-12-27 Fri 10:50]
+** STRT Start fixing the C files
 * FSE demo paper for exlong
 ** DONE write abstract section
 CLOSED: [2024-12-27 Fri 10:29]
