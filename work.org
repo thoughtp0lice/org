@@ -37,6 +37,8 @@ CLOSED: [2024-12-26 Thu 12:02]
 ** DONE Export all C translations to C files in the repo
 CLOSED: [2024-12-27 Fri 10:50]
 ** STRT Start fixing the C files
+** TODO add table about dataset
+** TODO c book
 * FSE demo paper for exlong
 ** DONE write abstract section
 CLOSED: [2024-12-27 Fri 10:29]
@@ -48,6 +50,7 @@ CLOSED: [2024-12-27 Fri 10:29]
 ** TODO add CLIs for full pipeline
 *** TODO script for github link -> formatted tests
 *** TODO srtipt for porject & MUT name -> formated test
+** TODO add intro section.
 * TA for Dependable Computing
 ** DONE Grade the papers
 CLOSED: [2024-12-16 Mon 11:44]
