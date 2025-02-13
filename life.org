@@ -1,39 +1,8 @@
-* Immigration [1/16]
-** DONE fill out all the forms from lawyer
-CLOSED: [2024-12-17 Tue 16:10]
-** STRT Sealed medical exam
-*** DONE find doctor at [[uscis.gov/tools/find-a-civil-surgeon]]
-CLOSED: [2024-12-26 Thu 15:08]
-*** TODO go to the appointment
-SCHEDULED: <2024-12-17 Fri>
-**** Go to texas med clinic Pflugerville for exam
+#+title: My life schedule
 
-** TODO Passport Stype Photos
-** TODO Tax transcripts
-** TODO $3005 USCICS filing fee
-** TODO Family photos of me and Ieleen
-** TODO A passport-style photo of each of you
-** TODO Birth certificate with certified English translation
-** TODO Texas Birth certificate for Ieleen and/or the biographical page of her U.S. passport
-** TODO Marriage certificate
-** TODO Joint documents [0/5]
-*** TODO Health insurance together
-*** TODO Car instuance toghter
-*** TODO School document listing ieleen as emergency
-*** TODO Bank satements
-*** TODO Life insurance of me with ieleen as beneficiary
-** TODO My passport, entry stamp, and visa, I-20
-** TODO Paystub from ieleen
-** TODO 2023, 2022, 2021 Tax return
-** TODO Ieleen's occupation
-** TODO address for 171 high schoo;
-* Money
-** DONE Close the 2 CDs
-CLOSED: [2024-12-16 Mon 11:44]
-* Health
-** DONE finish the drug test [2/2]
-CLOSED: [2024-12-20 Fri 14:42]
-*** DONE Scedule with CPL
-CLOSED: [2024-12-19 Thu 12:24]
-*** DONE Then actually go
-CLOSED: [2024-12-20 Fri 14:42]
+* Reading
+** TODO Reading Today
+SCHEDULED: <2025-02-13 Thu>
+* Events
+** TODO Eat at DAM-A, Hot Pot & BBQ AYCE <2025-02-14 Fri>
+** TODO House party <2025-02-15 Sat>
