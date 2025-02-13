@@ -5,4 +5,9 @@
 SCHEDULED: <2025-02-13 Thu>
 * Events
 ** TODO Eat at DAM-A, Hot Pot & BBQ AYCE <2025-02-14 Fri>
-** TODO House party <2025-02-15 Sat>
+** House party <2025-02-15 Sat>
+* Appointments
+** TODO Go do bio metrics 10 AM <2025-02-21 Fri>
+ - Location: 11301 Lakeline Blvd Parkline Plaza Ctr, Ste 150
+** TODO Send Ieleen's paystub to lawyer
+DEADLINE: <2025-02-14 Fri>
