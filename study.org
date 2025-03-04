@@ -1,0 +1,9 @@
+#+title: My work schedule
+
+* Throwgen Project
+** Meeting with Jiyang <2025-03-05 Wed>
+** Group meeting <2025-03-07 Fri>
+* Class Project
+** Meeting with project group <2025-03-05 Wed 10:00>
+* Reading group
+** TODO [[https://arxiv.org/abs/2410.03524][Steering Large Language Models between Code Execution and Textual Reasoning]] <2025-03-06 Thu 12:00>

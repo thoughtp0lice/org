@@ -1,4 +1,0 @@
-#+title: My work schedule
-
-* DONE Meet with Jiyang at 4 today <2025-02-13 Thu>
-CLOSED: [2025-02-13 Thu 16:20]

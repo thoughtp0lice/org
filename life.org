@@ -1,15 +1,23 @@
 #+title: My life schedule
 
 * Reading
-** TODO Reading Today
-SCHEDULED: <2025-02-13 Thu>
+** KILL Reading Today
+CLOSED: [2025-02-17 Mon 18:36] SCHEDULED: <2025-02-13 Thu>
 * Events
-** TODO Eat at DAM-A, Hot Pot & BBQ AYCE <2025-02-14 Fri>
+** DONE Eat at DAM-A, Hot Pot & BBQ AYCE <2025-02-14 Fri>
+CLOSED: [2025-02-17 Mon 18:36]
 ** House party <2025-02-15 Sat>
 * Appointments
-** TODO Go do bio metrics 10 AM <2025-02-21 Fri>
+** DONE Go do bio metrics 10 AM <2025-02-21 Fri>
+CLOSED: [2025-02-21 Fri 09:25]
  - Location: 11301 Lakeline Blvd Parkline Plaza Ctr, Ste 150
 * Tasks
-** TODO sign tax form and send to lawyer
+** TODO Lunch with Ieleen chick-fila <2025-03-04 Tue>
+** TODO Go to CVS <2025-03-04 Tue>
+*** TODO Bring cough drop to ieleen
+*** TODO Bring mask to ieleen
+** TODO Dark room meeting with ceren et al <2025-03-05 Wed 12:00>
+** DONE sign tax form and send to lawyer
+CLOSED: [2025-02-17 Mon 18:36]
 ** DONE Send Ieleen's paystub to lawyer
 CLOSED: [2025-02-13 Thu 13:17] DEADLINE: <2025-02-14 Fri>
