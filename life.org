@@ -12,10 +12,14 @@ CLOSED: [2025-02-17 Mon 18:36]
 CLOSED: [2025-02-21 Fri 09:25]
  - Location: 11301 Lakeline Blvd Parkline Plaza Ctr, Ste 150
 * Tasks
-** TODO Lunch with Ieleen chick-fila <2025-03-04 Tue>
-** TODO Go to CVS <2025-03-04 Tue>
-*** TODO Bring cough drop to ieleen
-*** TODO Bring mask to ieleen
+** DONE Lunch with Ieleen chick-fil-a <2025-03-04 Tue>
+CLOSED: [2025-03-05 Wed 11:12]
+** DONE Go to CVS <2025-03-04 Tue>
+CLOSED: [2025-03-05 Wed 11:13]
+*** KILL Bring cough drop to ieleen
+CLOSED: [2025-03-05 Wed 11:13]
+*** KILL Bring mask to ieleen
+CLOSED: [2025-03-05 Wed 11:13]
 ** TODO Dark room meeting with ceren et al <2025-03-05 Wed 12:00>
 ** DONE sign tax form and send to lawyer
 CLOSED: [2025-02-17 Mon 18:36]
