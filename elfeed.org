@@ -3,8 +3,7 @@
 * root :elfeed:
 ** Programming :programming:
 *** [[https://this-week-in-rust.org/rss.xml][This Week in Rust]] :rust:
-*** [[https://terminaltrove.com/blog.xml][Terminal Trove]] :tool:
-** News :news:
-*** [[https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml][NYTimes]] :nyt:
-** Research :research:
-*** [[https://rss.arxiv.org/rss/cs.ai][Arxiv CS.AI]] :arxiv:
+** Comic :comic:
+*** [[https://xkcd.com/rss.xml][xkcd]]
+** Cooking :cooking:
+*** [[https://www.seriouseats.com/feeds/google-news][serious eats]]

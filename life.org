@@ -11,6 +11,11 @@ CLOSED: [2025-02-17 Mon 18:36]
 ** DONE Go do bio metrics 10 AM <2025-02-21 Fri>
 CLOSED: [2025-02-21 Fri 09:25]
  - Location: 11301 Lakeline Blvd Parkline Plaza Ctr, Ste 150
+** House Tours
+*** Flora <2025-03-15 Sat 15:30>
+*** Walnut Creek <2025-03-15 Sat 11:30>
+*** Windsor Commons <2025-03-15 Sat 13:00>
+*** St Johns <2025-03-15 Sat 10:00>
 * Tasks
 ** DONE Lunch with Ieleen chick-fil-a <2025-03-04 Tue>
 CLOSED: [2025-03-05 Wed 11:12]
@@ -20,7 +25,8 @@ CLOSED: [2025-03-05 Wed 11:13]
 CLOSED: [2025-03-05 Wed 11:13]
 *** KILL Bring mask to ieleen
 CLOSED: [2025-03-05 Wed 11:13]
-** TODO Dark room meeting with ceren et al <2025-03-05 Wed 12:00>
+** DONE Dark room meeting with ceren et al <2025-03-05 Wed 12:00>
+CLOSED: [2025-03-10 Mon 09:45]
 ** DONE sign tax form and send to lawyer
 CLOSED: [2025-02-17 Mon 18:36]
 ** DONE Send Ieleen's paystub to lawyer

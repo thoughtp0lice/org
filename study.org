@@ -1,10 +1,15 @@
 #+title: My work schedule
 
 * Throwgen Project
-** Meeting with Jiyang <2025-03-05 Wed>
-** Group meeting <2025-03-07 Fri>
+** DONE Meeting with Jiyang <2025-03-05 Wed>
+CLOSED: [2025-03-10 Mon 09:57]
+** KILL Group meeting <2025-03-07 Fri>
+CLOSED: [2025-03-10 Mon 09:58]
 * Class Project
 ** DONE Meeting with project group <2025-03-05 Wed 10:00>
 CLOSED: [2025-03-05 Wed 11:13]
+** TODO Project proposal
+DEADLINE: <2025-03-10 Mon>
 * Reading group
-** TODO [[https://arxiv.org/abs/2410.03524][Steering Large Language Models between Code Execution and Textual Reasoning]] <2025-03-06 Thu 12:00>
+** DONE [[https://arxiv.org/abs/2410.03524][Steering Large Language Models between Code Execution and Textual Reasoning]] <2025-03-06 Thu 12:00>
+CLOSED: [2025-03-10 Mon 09:57]
