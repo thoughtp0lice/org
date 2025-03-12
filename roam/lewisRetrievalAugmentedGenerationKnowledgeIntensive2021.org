@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       498af54b-e054-451a-a552-6593e24176c5
+:ROAM_REFS: @lewisRetrievalAugmentedGenerationKnowledgeIntensive2021
+:END:
+#+title: Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and Küttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rocktäschel, Tim and Riedel, Sebastian and Kiela, Douwe, Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+
+* Method
+** RAG-Sequence
+- each sequence probability marginalized over all top-k documents
+- run-time
+  1. sample top-k beam from each documents
+  2. get sequences probability from documents where it's not in top-k beams
+** RAG-Token
+- each token probability marginalized over all top-k documents

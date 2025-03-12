@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       f1796c97-b6b9-48be-abbb-1d681b547f49
+:ROAM_REFS: @guEfficientlyModelingLong2022
+:END:
+#+title: Gu, Albert and Goel, Karan and Ré, Christopher, Efficiently Modeling Long Sequences with Structured State Spaces
+
+- Linear complexity over time O(t) instead of O(t^2) like transformer [cite:@vaswaniAttentionAllYou2023]
+- Use convolution so it's more efficient and more parallelizable
+- Base on state space model and math tricks to turn it into a convolution
+- stack many S4 layers heads and use a liner to combine the result like Transformers
+- There a task called sequential MINIST WTF
+- evolve into Mamba [cite:@guMambaLinearTimeSequence2024]
