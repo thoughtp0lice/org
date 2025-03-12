@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       42b4a0a3-1bb3-453d-9099-d034bd4ac872
+:ROAM_REFS: @wangNaturalBestModelAgnostic2024
+:END:
+#+title: Natural Is The Best: Model-Agnostic Code Simplification for Pre-trained Large Language Models
+#+filetags: :papers:LLM:code:
+
+==
+
+* Motivation
+:PROPERTIES:
+:ID:       f91bedac-ac6a-4039-a4b5-bab1710096a8
+:ROAM_REFS: @wangNaturalBestModelAgnostic2024
+:END:
+- prior methods uses attention information to decide which code tokens should be dropped in code simplification
+- author argues that it should only depend on the nature of the code
+- findings show that token types is highly impactful
+  - there are more symbols (explained in [[id:8abe51f9-5f38-4797-98b4-9c86525585f8][Token Category and Removal]]) than variables & method signatures in the program
+  - but removing symbols results in way lower performance drop
+
+* Method
+:PROPERTIES:
+:ID:       8abe51f9-5f38-4797-98b4-9c86525585f8
+:ROAM_REFS: @wangNaturalBestModelAgnostic2024
+:END:
+- Lexical Level
+  - Symbol tokens :: defined as the ones including brackets, separators and operators
+  - Identifiers :: variable names, method names, etc
+  - Syntatic Level :: use AST to identify
+    - Tokens in Control Structures :: keywords for control-flow statements, like ~if~, ~for~
+    - Tokens in Method Signatures :: tokens in method declaration and parameters
+    - Tokens in Method Invocations :: call to methods which include name, parameter return value
+- Semantic Level :: keep only  tokens in Program Dependence Graph (PDG)
+
+
+* Takwaway
+:PROPERTIES:
+:ID:       9571ce5b-4104-4e65-856c-6c97387df785
+:ROAM_REFS: @wangNaturalBestModelAgnostic2024
+:END:
+- Minimizing the volume of code entered can significantly cut down on training
+time.
+- Making up a substantial portion of the content yet have minimal impact on
+performance, symbols are well-suited for code removal.
+- The tokens within method signatures wield the most substantial influence over
+downstream tasks, particularly those pertaining to generation tasks.
+- Tokens that are not present in PDGs have little impact on downstream tasks due
+to their little semantic information
+- method signature > identifiers > control structures ≈ method invocations > symbol tokens

@@ -1,8 +1,13 @@
 #+title: Elfeed Configuration
 
 * root :elfeed:
-** Programming :programming:
-*** [[https://this-week-in-rust.org/rss.xml][This Week in Rust]] :rust:
+** Tech :tech:
+*** General Tech :general-tech:
+**** Hacker News :hacker-news:
+***** [[https://hnrss.org/frontpage][HN Frontpage]
+***** [[https://hnrss.org/bestcomments][HN Comments]]
+*** Programming :programming:
+**** [[https://this-week-in-rust.org/rss.xml][This Week in Rust]] :rust:
 ** Comic :comic:
 *** [[https://xkcd.com/rss.xml][xkcd]]
 ** Cooking :cooking:

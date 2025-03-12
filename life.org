@@ -12,10 +12,11 @@ CLOSED: [2025-02-17 Mon 18:36]
 CLOSED: [2025-02-21 Fri 09:25]
  - Location: 11301 Lakeline Blvd Parkline Plaza Ctr, Ste 150
 ** House Tours
-*** Flora <2025-03-15 Sat 15:30>
-*** Walnut Creek <2025-03-15 Sat 11:30>
-*** Windsor Commons <2025-03-15 Sat 13:00>
-*** St Johns <2025-03-15 Sat 10:00>
+*** Flora (5406 Middle Fiskville Rd) <2025-03-15 Sat 15:30>
+*** Walnut Creek (8038 Exchange Dr) <2025-03-15 Sat 11:30>
+*** Windsor Commons (5900 Westminster Dr) <2025-03-15 Sat 13:00>
+*** St Johns (601 W St Johns Ave) <2025-03-15 Sat 10:00>
+*** Johnny (613 W St Johns Ave) <2025-03-17 Mon 9:45>
 * Tasks
 ** DONE Lunch with Ieleen chick-fil-a <2025-03-04 Tue>
 CLOSED: [2025-03-05 Wed 11:12]
