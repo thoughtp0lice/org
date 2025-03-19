@@ -1,0 +1,40 @@
+#+title: Daily Recipies Planner
+
+* [[https://www.youtube.com/watch?v=QfjbGlsAq6A&ab_channel=Epicurious][Chili]] <2025-03-19 Wed>
+** TODO Ingredients [3/11]
+- [ ] Cumin seeds
+- [ ] Coriander seed
+- [ ] smoked paprika
+- [X] 1 tbsp paprika
+- [ ] cayenne
+- [X] minced beef
+- [X] bean
+- [ ] 1 bell pepper
+- [ ] 1 onion
+- [ ] fire roasted diced tomato
+- [ ] tomato paste
+** TODO Prep
+- [ ] take minced beef out
+* [[https://cooking.nytimes.com/recipes/1019096-shepherds-pie][Shepherd’s Pie]] <2025-03-20 Thu>
+** TODO Ingredients [9/19]
+- [ ] 1 onion
+- [ ] 2 celery stalks
+- [ ] 1 medium carrot
+- [ ] 3 garlic cloves
+- [ ] 2 tablespoons tomato paste
+- [ ] all-purpose flour
+- [X] 2 tablespoons salted butter
+- [X] Salt and pepper
+- [X] 2 pounds ground beef
+- [X] 2 cups beef broth
+- [ ] ½ cup dry red wine (or water)
+- [ ] ½ cup frozen peas
+- [X] 2 tablespoons Worcestershire sauce
+- [ ] 4 thyme sprigs
+- [X] 2 dried bay leaves
+- [ ] 2½ pounds russet potatoes or mased potato
+- [X] ½ cup whole milk
+- [X] 5 tablespoons salted butter
+- [X] ¾ cup grated Parmesan
+** TODO Prep
+- [ ] take minced beef out
