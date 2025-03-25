@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       e91e125a-4c9b-4c50-966a-6c7e8c478a35
+:ROAM_REFS: @karrasElucidatingDesignSpace2022
+:END:
+#+title: Karras, Tero and Aittala, Miika and Aila, Timo and Laine, Samuli, Elucidating the Design Space of Diffusion-Based Generative Models
+#+filetags: :diffusion:
+#+STARTUP: latexpreview
+* Expressing diffusion models in a common framework
+** Preliminary
+- \( p_{\text{data}}(x)\) -> data distribution
+- \(p(x;\sigma)\) distribution after adding Gaussian noise of standard deviation of \(\sigma\)
+** ODE formulation
+- a ODE continuously increases or reduces noise level of the image when moving forward or backward in time, respectively.
+- this describes the trajectory of denoising
+- starting from point \(x_a \sim p(x_a;\sigma(t_a))\) and follow the ODE to \(t_b\) yields a sample \(x_b \sim p(x_b;\sigma(t_b))\) (so i guess sampling \(x_a\) then go to \(x_b\) is the same as sampling \(x_b\))
+- \( dx = -\dot{\sigma}(t)\sigma(t)\nabla_x \log p(x;\sigma(t))dt \)
+- \(\nabla_x \log p(x;\sigma(t))\) is the *score function*
+** Denoising score matching
+- If we just learn a denoise function \( D(x;\sigma) \) by minimizing the denoiser error for every sample
+- \( \mathbb{E}_{y\sim p_{data}}\mathbb{E}_{n\sim \mathcal{N}(0, \sigma^2I)} \Vert D(y+n;\sigma) - y \Vert_2^2\), then the *score function* is \( (D(x;\sigma) - x) / \sigma^2 \) where \(y\) is a training image and \(n\) is noise
+** Time-dependent signal scaling
+- Some method have a scale schedule where \(x = s(t)\hat{x}\) where \(\hat{x}\) is the original
+- not gonna write the resulting ODE here cause they later figure out that the schedule works the best when it's just 1
+* Improvements to deterministic sampling
+** Discretization and higher-order integrators
+- Eular's method have too much error each time step
+- The best is Heun’s 2nd order method
+** Trajectory curvature and noise schedule
+- \( \sigma(t) = t, s(t) = 1\)
+- Then ode is \( dx/dt = (x - D(x;t)) / t \)
+* Stochastic sampling
+** Background
+- \(dx_\pm = -\dot{\sigma}(t)\sigma(t)\nabla_x\log p(x;\sigma(t))dt \pm \beta(t)\sigma(t)^2\nabla_x\log p(x;\sigma(t))dt + \sqrt{2\beta(t)}\sigma(t)d\omega_t \)
+- \(dx_+\) and \(dx_-\) are separate SDEs for moving forward and backward in time.
+- the last two terms are adding nose and denoising at the same time
+- The noise added can help correcting the error made in earlier steps
+- This work they add noise by doing forward in time a little then going backward in time (i think)
+* Preconditioning and training
+- \( D_\theta(x;\sigma) = c_{skip}(\sigma)x + c_{out}(\sigma)F_\theta(c_{in}(\sigma)x;c_{noise}(\sigma))\)
+- where all the c help regulate now much F predicts the full x or the noise
+- Cause when the noise level is large the predicting the noise gets harder, since the sigma multiplier is large
+- loss is changed accordingly

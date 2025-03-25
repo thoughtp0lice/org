@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       83a51446-7bd5-433e-9489-d1e3c0232e96
+:ROAM_REFS: @hoDenoisingDiffusionProbabilistic2020
+:END:
+#+title: Ho, Jonathan and Jain, Ajay and Abbeel, Pieter, Denoising Diffusion Probabilistic Models
+#+filetags: :diffusion:
+#+STARTUP: latexpreview
+
+* OK this time we will finally learn what is diffusion model all right?
+* Background: Diffusion models
+** Reverse Process
+- \( p_\theta(\mathbf{x}_{0:T}) := p(\mathbf{x}_T) \prod_{t=1}^T p_\theta(\mathbf{x}_{t-1} | \mathbf{x}_t) \)
+- \( p_\theta(\mathbf{x}_{t-1}|\mathbf{x}_t) := \mathcal{N}(\mathbf{x}_{t-1}; \mu_\theta(\mathbf{x_t, t}), \Sigma_\theta(\mathbf{x}_t, t)) \)
+** Forward Process
+- Markov chain that gradually adds Gaussian noise to the data according to a variance schedule
+- \( q(\mathbf{x}_{0:T}) := \prod_{t=1}^T q(\mathbf{x}_t | \mathbf{x}_{t-1}) \)
+- \( p_\theta(\mathbf{x}_t|\mathbf{x}_{t-1}) := \mathcal{N}(\mathbf{x}_t; \sqrt{1-\beta_t}\mathbf{x}_{t-1}, \beta_t\mathbf{I}) \)
+** Loss
+- Just like ELBO but \( \mathbf{x}_{1:T} \) as latent
+- \( \mathbb{E}[-\log p_\theta(\mathbf{x}_0)] \leq \mathbb{E}[-\log\frac{p_\theta(\mathbf{x}_{0:T})}{q(\mathbf{x}_{1:T}|\mathbf{x_0})}] = \mathbb{E}_q [-\log p(\mathbf{x}_T) - \sum_{t \geq 1} \log\frac{p_\theta(\mathbf{x}_{t-1}|\mathbf{x}_t)}{q(\mathbf{x}_t|\mathbf{x}_{t-1})}] =: L \)
+** Making it more efficient
+- Rewrite forward process
+  - Sampling \( \mathbf{x}_t \) at time-step t is in closed form
+  - let \( \alpha_t := 1 - \beta_t, \bar{\alpha_t} := \prod_{s=1}^t \alpha_s \), then \( q(\mathbf{x}_t | \mathbf{x}_0) = \mathcal{N}(\mathbf{x}_t; \sqrt{\bar{\alpha}_t}\mathbf{x}_0, (1 - \bar{\alpha}_t\mathbf{I})) \)
+- Rewriting L in terms of KL divergence
+  - \( \mathbb{E}_q [D_{KL}(q(\mathbf{x}_T|\mathbf{x}_0) || p(\mathbf{x}_T)) + \sum_{t>1} D_{KL}(q(\mathbf{x}_{t-1}|\mathbf{x}_t, \mathbf{x}_0) || p_\theta(\mathbf{x}_{t-1}| \mathbf{x}_t)) - \log p_\theta(\mathbf{x}_0| \mathbf{x}_1)] \)
+    - the first term is \( L_T \), second is \( L_{t-1} \), third is \( L_0 \)
+  - Compare \( p_\theta(\mathbf{x}_{t-1} | \mathbf{x}_t) \) against forward process posteriori (tractable when conditioned on \(\mathbf{x}_0\) )
+    - \( q(\mathbf{x}_{t-1} | \mathbf{x}_t, \mathbf{x}_0) = \mathcal{N}(\mathbf{x}_{t-1};\tilde{\mu}_t(\mathbf{x}_t, \mathbf{x}_0), \tilde{\beta}_t\mathbf{I}) \), where \( \tilde{\mu}_t \) and \( \tilde{\beta}_t \) are represented with \( \alpha, \bar{\alpha} \)
+* Method
+** Forward Process
+Fix \( \beta_t \) to constants, so \( q \) has no learnable parameters, so \(L_T\) is a constant
+** Reverse Process
+- set \( \sum_\theta(\mathbf{x}_t, t) = \sigma_t^2\mathbf{I} \) to untrained time depended constants, like \( \beta_t \)
+- mean
+  - we can write \( L_{t-1} = \mathbb{E}_1 [\frac{1}{2\sigma_t^2} || \tilde{\mu}_t(\mathbf{x}_t, \mathbf{x}_0) - \mu_\theta(\mathbf{x}_t, t) ||^2] \)
+  - Also \( \mathbf{x}_t(\mathbf{x}_0, \epsilon) = \sqrt{\bar{\alpha}_t}}\mathbf{x}_0 + \sqrt{1 - \bar{\alpha}_t}\epsilon\) for \( \epsilon \sim \mathcal{N}(0,\mathbf{I}) \)
+  - Then doing some math magic and doing some empirical magic we arrive at this:
+    \( L_{simple}(\theta) := \mathbb{E}_{t, \mathbf{x}_0, \theta}[|| \epsilon - \epsilon_\theta(\sqrt{\bar{\alpha}_t}}\mathbf{x}_0 + \sqrt{1 - \bar{\alpha}_t}\epsilon, t) ||^2] \)
+
+* My Reflection
+** What is model doing?
+- (I think) in a way the network model (\( \epsilon \)) is predicting the \(\mathbb{E}_{\mathbf{x_0} ~ p(\cdot | \mathbf{x_t}, t)} \mathbf{x}_0\) or the average of the denoised image given the current state. Since \( \mathbf{x}_0 = \frac{\mathbf{x_t-\sqrt{1-\bar{\alpha_t}}\epsilon}}{\sqrt{\bar{\alpha_t}}} \)
+- Since neural network will always predict the mean of things and it's meaningless to have a average photo, we need to *sample*
+- And the whole model is trying to simulate the reverse Markov chain by simulating \( q(\mathbf{x}_{t-1} | \mathbf{x}_t) \), which is \( \int q(\mathbf{x}_{t-1} | \mathbf{x}_t,\mathbf{x}_0)q(\mathbf{x}_0)d\mathbf{x}_0 \) since \( q(\mathbf{x}_{t-1} | \mathbf{x}_t)q(\mathbf{x}_0) \) is tractable and is just a Gaussian. They approximate the transition as a Gaussian whose mean is the average of all the \( q(\mathbf{x}_{t-1} | \mathbf{x}_t)q(\mathbf{x}_0) \) mean.
+- I guess if you do enough steps the error in the approximation doesn't matter.

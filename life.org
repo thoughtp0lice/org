@@ -12,8 +12,10 @@ CLOSED: [2025-03-15 Sat 10:53]
 CLOSED: [2025-03-15 Sat 10:52]
  - Location: 11301 Lakeline Blvd Parkline Plaza Ctr, Ste 150
 ** House Tours
-*** TODO 1840 Burton Drive <2025-03-22 Sat 13:00>
-*** TODO 2018 W Rundberg Ln APT 11C <2025-03-22 Sat 11:00>
+*** DONE 1840 Burton Drive <2025-03-22 Sat 13:00>
+CLOSED: [2025-03-25 Tue 10:44]
+*** DONE 2018 W Rundberg Ln APT 11C <2025-03-22 Sat 11:00>
+CLOSED: [2025-03-25 Tue 10:44]
 *** KILL Flora (5406 Middle Fiskville Rd) <2025-03-15 Sat 15:30>
 CLOSED: [2025-03-19 Wed 12:58]
 *** DONE The reserve Walnut Creek (8038 Exchange Dr) <2025-03-15 Sat 11:30>

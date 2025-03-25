@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       19b78909-cef6-4959-a716-24f16d0bb7ac
+:END:
+#+title: improve code gen by improve variable names
+#+filetags: :LLM:ideas:
+
+* Background
+- Prior research [cite:@wangNaturalBestModelAgnostic2024] has shown that LLM mainly pay attention to the variable names
+- but human programmer are sometimes bad at variable names
+* Method
+- Find all variables in a partial code
+- Ask AI to create more descriptive names for each
+- refactor
+* Misc
+- we can first try to make variable names worse to see variable name effects

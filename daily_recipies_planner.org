@@ -1,7 +1,8 @@
 #+title: Daily Recipies Planner
 
 * [[https://www.youtube.com/watch?v=QfjbGlsAq6A&ab_channel=Epicurious][Chili]] <2025-03-19 Wed>
-** TODO Ingredients [11/11]
+** DONE Ingredients [11/11]
+CLOSED: [2025-03-25 Tue 10:44]
 - [X] Cumin seeds
 - [X] Coriander seed
 - [X] smoked paprika
@@ -13,16 +14,18 @@
 - [X] 1 onion
 - [X] fire roasted diced tomato
 - [X] tomato paste
-** TODO Prep
-- [ ] take minced beef out
+** DONE Prep
+CLOSED: [2025-03-25 Tue 10:45]
+- [X] take minced beef out
 * [[https://cooking.nytimes.com/recipes/1026474-cottage-pie][Cottage Pie]] <2025-03-20 Thu>
-** TODO Ingredients [18/19]
+** DONE Ingredients [19/19]
+CLOSED: [2025-03-25 Tue 10:44]
 - [X] 1 onion
 - [X] 2 celery stalks
 - [X] 1 medium carrot
 - [X] 3 garlic cloves
 - [X] 2 tablespoons tomato paste
-- [ ] all-purpose flour
+- [X] all-purpose flour
 - [X] 2 tablespoons salted butter
 - [X] Salt and pepper
 - [X] 2 pounds ground beef
@@ -36,5 +39,6 @@
 - [X] ½ cup whole milk
 - [X] 5 tablespoons salted butter
 - [X] ¾ cup grated Parmesan
-** TODO Prep
-- [ ] take minced beef out
+** DONE Prep
+CLOSED: [2025-03-25 Tue 10:44]
+- [X] take minced beef out
