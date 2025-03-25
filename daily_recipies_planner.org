@@ -1,4 +1,4 @@
-#+title: Daily Recipies Planner
+#+title: Daily Recipes Planner
 
 * [[https://www.youtube.com/watch?v=QfjbGlsAq6A&ab_channel=Epicurious][Chili]] <2025-03-19 Wed>
 ** DONE Ingredients [11/11]
