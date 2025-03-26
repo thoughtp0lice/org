@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a23bf13b-4d1d-44a6-8fa0-991370014ec5
+:END:
+#+title: Project Idea
+
+This is a symbolic node for project ideas

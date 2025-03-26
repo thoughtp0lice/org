@@ -2,4 +2,4 @@
 :ID:       27547fc7-3542-4cf6-b021-da0deaefe32c
 :ROAM_REFS: @sohl-dicksteinDeepUnsupervisedLearning2015
 :END:
-#+title: Sohl-Dickstein, Jascha and Weiss, Eric A. and Maheswaranathan, Niru and Ganguli, Surya, Deep Unsupervised Learning Using Nonequilibrium Thermodynamics
+#+title: Deep Unsupervised Learning Using Nonequilibrium Thermodynamics

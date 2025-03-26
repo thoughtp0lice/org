@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       c762785d-a5c8-4d4e-9c70-d097f0040999
+:ROAM_REFS: @chungDiffusionPosteriorSampling2024
+:END:
+#+title: Diffusion Posterior Sampling for General Noisy Inverse Problems
+#+filetags: :diffusion:
+
+- Inverse problem: measurement -> data
+  - measurement could be anything that reduce the information in data and correspond to multiple data points
+  - like blur, masking part of the image, pixelate the image
+
+* Solving inverse problem with diffusion models
+- \(\nabla_{x_t} \log p_t(x_t|y) = \nabla_{x_t} \log p_t(x_t) + \nabla_{x_t} \log p_t (y|x_t) \)
+- \( \nabla_{x_t} \log p_t(x_t) \) is the score function [[id:6f4c3a14-64a5-4510-b052-96e03c8d2920][diffusion]] models are estimating
+- \(\nabla_{x_t} \log p_t (y|x_t)\) is hard to find
+  - prior work did a sample then project method so the intermediate image is projected to be consistent with the measurement
+  - this work finds a way to estimate it

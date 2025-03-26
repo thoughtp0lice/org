@@ -4,8 +4,10 @@
 #+title: improve code gen by improve variable names
 #+filetags: :LLM:ideas:
 
+[[id:a23bf13b-4d1d-44a6-8fa0-991370014ec5][Project Idea]]
+
 * Background
-- Prior research [cite:@wangNaturalBestModelAgnostic2024] has shown that LLM mainly pay attention to the variable names
+- Prior [[id:42b4a0a3-1bb3-453d-9099-d034bd4ac872][research]] [cite:@wangNaturalBestModelAgnostic2024] has shown that [[id:374d0242-6d95-4b4f-adaa-1f7211b39f59][LLM]] mainly pay attention to the variable names
 - but human programmer are sometimes bad at variable names
 * Method
 - Find all variables in a partial code

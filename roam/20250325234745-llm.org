@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       374d0242-6d95-4b4f-adaa-1f7211b39f59
+:END:
+#+title: LLM
+
+- Large language model
+- A transformer decoder trained to predict next token

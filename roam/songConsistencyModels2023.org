@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       aa9b611c-acdd-456f-a21a-dc3b6e2e029d
+:ROAM_REFS: @songConsistencyModels2023
+:END:
+
+#+title: Consistency Models
+#+filetags: :diffusion:
+
+* Consistancy Models
+- It's a *single-step* generation
+- Could be distilling [[id:6f4c3a14-64a5-4510-b052-96e03c8d2920][diffusion]] models [cite:@hoDenoisingDiffusionProbabilistic2020] and could be trained on its own
+** Definition
+*** Formal definition
+Given solution trajectory \( \{x_t\}_{t\in [\epsilon, T]} \) of a Probability Flow ODE, consistency function is \(f:(x_t, t) \rightarrow x_\epsilon\). It maintains consistency alone the trajectory or \(f(x_t, t) = f(x_{t'}, t') \).
+*** Informal
+Predicts the image given noised image
+** Parameterization
+- \( f_\theta (x, t) = c_{skip}(t)x + c_{out}(t)F_\theta (x,t) \)
+- setup like this so \( f(\cdot, \epsilon)\) is identity
+** Sampling
+- noise image and one pass through consistency model
+- multi-step by doing denoising and add noise
+** Zero-Shot Data Editing
+- use it similar to latent models
+- can denoise from any noise level
+  - iterative replacement similar to diffusion models
+* Training via Distillation
+1. Sample \(x_{t_{n+1}}\) by adding noise to image
+2. getting \( \hat{x}^\phi_{t_n}\) by running a diffusion model one step
+3. Loss is \( \mathcal{L}^N_{CD}(\theta, \theta^-; \phi) := E[\lambda(t)d(f_\theta(x_{t_{n+1}}, t_{n+1}), f_{\theta^-}(\hat{x}^\phi_{t_n}, t_n))] \), where \(\theta^-\) is a running average of network weight
+* Training in Isolation
+- use a estimator for the score function: \( \nabla \log p_t(x_t) = - \mathbb{E}[\frac{x_t-x}{t^2}| x_t] \)

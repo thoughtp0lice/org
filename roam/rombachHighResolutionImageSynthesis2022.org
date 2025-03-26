@@ -2,7 +2,7 @@
 :ID:       6080868c-6427-4323-a457-e74405aa0cd2
 :ROAM_REFS: @rombachHighResolutionImageSynthesis2022
 :END:
-#+title: Rombach, Robin and Blattmann, Andreas and Lorenz, Dominik and Esser, Patrick and Ommer, Björn, High-Resolution Image Synthesis with Latent Diffusion Models
+#+title: High-Resolution Image Synthesis with Latent Diffusion Models
 #+filetags: :gen-ai-project:diffusion:
 
 * Method
@@ -16,7 +16,7 @@
     - KL-reg: KL-penalty towards a standard normal on the learned latent
     - VQ-reg: uses a vector quantization layer within the decoder.
 ** Latent Diffusion Models
-- pretty much just [cite:@hoDenoisingDiffusionProbabilistic2020]
+- pretty much just [[id:6f4c3a14-64a5-4510-b052-96e03c8d2920][Diffusion]] [cite:@hoDenoisingDiffusionProbabilistic2020]
 - the model predicts the noise added to the 2d latent at time t
 - the model is a time-conditional UNet [cite:@ronnebergerUNetConvolutionalNetworks2015]
 ** Conditioning Mechanisms

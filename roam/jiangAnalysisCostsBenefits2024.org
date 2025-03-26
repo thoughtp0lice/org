@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1c2b043a-8a4b-4da5-b1db-b49ac2c68f3d
+:ROAM_REFS: @jiangAnalysisCostsBenefits2024
+:END:
+#+title: An Analysis of the Costs and Benefits of Autocomplete in IDEs

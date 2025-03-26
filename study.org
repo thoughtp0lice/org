@@ -1,15 +1,26 @@
 #+title: My work schedule
-
-* Throwgen Project
-** DONE Meeting with Jiyang <2025-03-05 Wed>
-CLOSED: [2025-03-10 Mon 09:57]
-** KILL Group meeting <2025-03-07 Fri>
-CLOSED: [2025-03-10 Mon 09:58]
+* Google Phd Fellowship Program
+DEADLINE: <2025-04-11 Fri>
+** TODO Material [0/6]
+- [ ] CV
+- [ ] Names of 2 other potential recommenders
+  - The student should alert these individuals that they may be asked to provide a letter in by May 15
+- [ ] Research Proposal
+  - maximum 3 pages, excluding references
+- [ ] Student essay response
+  - 350-word limit
+  - Describe the desired impact your research will make on the field and society, and why this is important to you. Include any personal, educational and/or professional experiences that have motivated your research interests.
+- [ ] Student essay response
+  - 350-word limit
+  - Describe an example of your leadership experience in which you have positively influenced others, helped resolve disputes or contributed to group efforts over time. (A leadership role can mean more than just a title. It can mean being a mentor to others, acting as the person in charge of a specific task, or taking the lead role in organizing an event or project. Think about what you accomplished and what you learned from the experience. What were your responsibilities? Did you lead a team? How did your experience change your perspective on leading others? Did you help to resolve an important dispute at your school, church, in your community or an organization? And your leadership role doesn't necessarily have to be limited to school activities. For example, do you help out or take care of your family?
+- [ ] Transcripts of current and previous academic records
+* FSE Demo
+DEADLINE: <2025-04-20 Sun>
 * Class Project
 ** DONE Meeting with project group <2025-03-05 Wed 10:00>
 CLOSED: [2025-03-05 Wed 11:13]
-** TODO Project proposal
-DEADLINE: <2025-03-10 Mon>
+** DONE Project proposal
+CLOSED: [2025-03-10 Mon 11:06] DEADLINE: <2025-03-10 Mon>
 * Reading group
 ** DONE [[https://arxiv.org/abs/2410.03524][Steering Large Language Models between Code Execution and Textual Reasoning]] <2025-03-06 Thu 12:00>
 CLOSED: [2025-03-10 Mon 09:57]

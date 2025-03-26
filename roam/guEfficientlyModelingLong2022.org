@@ -2,7 +2,7 @@
 :ID:       f1796c97-b6b9-48be-abbb-1d681b547f49
 :ROAM_REFS: @guEfficientlyModelingLong2022
 :END:
-#+title: Gu, Albert and Goel, Karan and Ré, Christopher, Efficiently Modeling Long Sequences with Structured State Spaces
+#+title: Efficiently Modeling Long Sequences with Structured State Spaces
 
 - Linear complexity over time O(t) instead of O(t^2) like transformer [cite:@vaswaniAttentionAllYou2023]
 - Use convolution so it's more efficient and more parallelizable

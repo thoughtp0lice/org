@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       7fa80a4f-27b4-4543-93b5-07192706fb37
+:ROAM_REFS: @kouLargeLanguageModels2024
+:END:
+#+title: Do Large Language Models Pay Similar Attention Like Human Programmers When Generating Code? - Kou, Bonan and Chen, Shengmai and Wang, Zhijie and Ma, Lei and Zhang, Tianyi
+#+filetags: :unread:

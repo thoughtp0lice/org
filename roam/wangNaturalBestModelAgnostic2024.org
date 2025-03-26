@@ -3,26 +3,16 @@
 :ROAM_REFS: @wangNaturalBestModelAgnostic2024
 :END:
 #+title: Natural Is The Best: Model-Agnostic Code Simplification for Pre-trained Large Language Models
-#+filetags: :papers:LLM:code:
-
-==
+#+filetags: :LLM:Code-LLM
 
 * Motivation
-:PROPERTIES:
-:ID:       f91bedac-ac6a-4039-a4b5-bab1710096a8
-:ROAM_REFS: @wangNaturalBestModelAgnostic2024
-:END:
-- prior methods uses attention information to decide which code tokens should be dropped in code simplification
+- prior methods uses attention information to decide which code tokens should be dropped in code simplification [[id:374d0242-6d95-4b4f-adaa-1f7211b39f59][LLM]]
 - author argues that it should only depend on the nature of the code
 - findings show that token types is highly impactful
-  - there are more symbols (explained in [[id:8abe51f9-5f38-4797-98b4-9c86525585f8][Token Category and Removal]]) than variables & method signatures in the program
+  - there are more symbols (explained in Token Category and Removal) than variables & method signatures in the program
   - but removing symbols results in way lower performance drop
 
 * Method
-:PROPERTIES:
-:ID:       8abe51f9-5f38-4797-98b4-9c86525585f8
-:ROAM_REFS: @wangNaturalBestModelAgnostic2024
-:END:
 - Lexical Level
   - Symbol tokens :: defined as the ones including brackets, separators and operators
   - Identifiers :: variable names, method names, etc
@@ -34,10 +24,6 @@
 
 
 * Takwaway
-:PROPERTIES:
-:ID:       9571ce5b-4104-4e65-856c-6c97387df785
-:ROAM_REFS: @wangNaturalBestModelAgnostic2024
-:END:
 - Minimizing the volume of code entered can significantly cut down on training
 time.
 - Making up a substantial portion of the content yet have minimal impact on

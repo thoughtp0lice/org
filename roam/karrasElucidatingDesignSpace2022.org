@@ -2,10 +2,10 @@
 :ID:       e91e125a-4c9b-4c50-966a-6c7e8c478a35
 :ROAM_REFS: @karrasElucidatingDesignSpace2022
 :END:
-#+title: Karras, Tero and Aittala, Miika and Aila, Timo and Laine, Samuli, Elucidating the Design Space of Diffusion-Based Generative Models
+#+title: Elucidating the Design Space of Diffusion-Based Generative Models
 #+filetags: :diffusion:
 #+STARTUP: latexpreview
-* Expressing diffusion models in a common framework
+* Expressing [[id:6f4c3a14-64a5-4510-b052-96e03c8d2920][diffusion]] models in a common framework
 ** Preliminary
 - \( p_{\text{data}}(x)\) -> data distribution
 - \(p(x;\sigma)\) distribution after adding Gaussian noise of standard deviation of \(\sigma\)
