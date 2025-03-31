@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       822c9c0b-4ae0-4361-9e68-6c20807b3380
+:END:
+#+title: Visual Language Model
+
+A [[id:374d0242-6d95-4b4f-adaa-1f7211b39f59][LLM]] that can also take vision input

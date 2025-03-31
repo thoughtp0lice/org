@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       dba50d2b-5de9-45e2-a400-8e649bcd9d51
+:END:
+#+title: Software Engineering
+
+This is a master node for anything SE related

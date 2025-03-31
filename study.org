@@ -16,6 +16,13 @@ DEADLINE: <2025-04-11 Fri>
 - [ ] Transcripts of current and previous academic records
 * FSE Demo
 DEADLINE: <2025-04-20 Sun>
+* Presentation
+** TODO Prepare rough script
+DEADLINE: <2025-03-31 Mon>
+** TODO Prepare quiz questions
+DEADLINE: <2025-03-31 Mon>
+** TODO read other group's paper
+DEADLINE: <2025-03-31 Mon>
 * Class Project
 ** DONE Meeting with project group <2025-03-05 Wed 10:00>
 CLOSED: [2025-03-05 Wed 11:13]

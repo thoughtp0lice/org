@@ -8,6 +8,8 @@ CLOSED: [2025-02-17 Mon 18:36] SCHEDULED: <2025-02-13 Thu>
 CLOSED: [2025-03-15 Sat 10:53]
 ** House party <2025-02-15 Sat>
 * Appointments
+** TODO Meeting the realtor lady <2025-03-29 Sat>
+** TODO Pulling out my wisdom teeth <2025-04-10 Thu>
 ** DONE Go do bio metrics 10 AM <2025-02-21 Fri>
 CLOSED: [2025-03-15 Sat 10:52]
  - Location: 11301 Lakeline Blvd Parkline Plaza Ctr, Ste 150

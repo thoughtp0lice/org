@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       4db6c01b-e4fa-45ad-8053-2bb16f7802bf
+:ROAM_REFS: @alayracFlamingoVisualLanguage2022
+:END:
+#+title: Flamingo: A Visual Language Model for Few-Shot Learning - Alayrac, Jean-Baptiste and Donahue, Jeff and Luc, Pauline and Miech, Antoine and Barr, Iain and Hasson, Yana and Lenc, Karel and Mensch, Arthur and Millican, Katie and Reynolds, Malcolm and Ring, Roman and Rutherford, Eliza and Cabi, Serkan and Han, Tengda and Gong, Zhitao and Samangooei, Sina and Monteiro, Marianne and Menick, Jacob and Borgeaud, Sebastian and Brock, Andrew and Nematzadeh, Aida and Sharifzadeh, Sahand and Binkowski, Mikolaj and Barreira, Ricardo and Vinyals, Oriol and Zisserman, Andrew and Simonyan, Karen
+
+* I need to do presentation for 2.1 and 2.2
+* One of the [[id:822c9c0b-4ae0-4361-9e68-6c20807b3380][Visual Language Model]]
+* Approach
+** Vision Encoder
+- Pre-train the vision encoder using contrastive objective on datasets of image and text pairs similar to CLIP
+- Flatten the final stage output (2D spatial grid of features) to a 1D sequence
+- Video is sampled at 1 FPS and flattened
+** Perceiver Re-sampler
+- takes variable number of image or video features and produce a fixed number of visual outputs
+- reduce the computational complexity of vision-text cross attention.
+- Use a transformer with predefined number of queries and visual features are KV
+** Gated cross-attention dense
+- insert a gated cross-attention dense block between original attention blocks.
+- At initialization the conditioned model yields the same results as the original model
+  - output of gated cross-attention dense is multiplied by \(\tanh(\alpha)\) then added to the input representation
+  - This improves the stability

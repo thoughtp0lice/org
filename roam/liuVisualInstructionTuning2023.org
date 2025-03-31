@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       88532147-6840-4ccc-88b8-922db430794f
+:ROAM_REFS: @liuVisualInstructionTuning2023
+:END:
+#+title: Visual Instruction Tuning - Liu, Haotian and Li, Chunyuan and Wu, Qingyang and Lee, Yong Jae
+
+[[id:822c9c0b-4ae0-4361-9e68-6c20807b3380][Visual Language Model]] from instruction tuning with GPT-4 generated multi-modal instruction following data.
+
+* Data Collection
+- Give ChatGPT a text description of the the image
+  - could be a caption
+  - could be a set bounding box coordinates of objects in the scene
+- GPT to give three types of QA about the image. Give GPT some manual QA as in-context examples
+  - Conversation :: A diverse set of questions are asked about the visual content of the image, including the object types, counting the objects, object actions, object locations, relative positions between objects.
+  - Detailed description :: For each image, we randomly sample one question from a list of questions to ask GPT-4 to generate the detailed description.
+  - Complex reasoning :: we further create in-depth reasoning questions. The answers typically require a step-by-step reasoning process by following rigorous logic.
