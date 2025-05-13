@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f2d4bfdb-1871-4134-a94f-28391909dc87
+:END:
+#+title: LLM Arxiv Sort
+
+This [[id:e73a2a1c-99ac-4723-9639-08bdb0d94bfd][Personal Project]] is using LLM to read Arxiv abstracts and decide whether a paper is worth checking out.

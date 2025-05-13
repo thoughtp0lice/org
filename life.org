@@ -1,62 +1,7 @@
 #+title: My life schedule
 
 * Reading
-** KILL Reading Today
-CLOSED: [2025-02-17 Mon 18:36] SCHEDULED: <2025-02-13 Thu>
 * Events
-** DONE Eat at DAM-A, Hot Pot & BBQ AYCE <2025-02-14 Fri>
-CLOSED: [2025-03-15 Sat 10:53]
-** House party <2025-02-15 Sat>
 * Appointments
-** TODO Meeting the realtor lady <2025-03-29 Sat>
-** TODO Pulling out my wisdom teeth <2025-04-10 Thu>
-** DONE Go do bio metrics 10 AM <2025-02-21 Fri>
-CLOSED: [2025-03-15 Sat 10:52]
- - Location: 11301 Lakeline Blvd Parkline Plaza Ctr, Ste 150
-** House Tours
-*** DONE 1840 Burton Drive <2025-03-22 Sat 13:00>
-CLOSED: [2025-03-25 Tue 10:44]
-*** DONE 2018 W Rundberg Ln APT 11C <2025-03-22 Sat 11:00>
-CLOSED: [2025-03-25 Tue 10:44]
-*** KILL Flora (5406 Middle Fiskville Rd) <2025-03-15 Sat 15:30>
-CLOSED: [2025-03-19 Wed 12:58]
-*** DONE The reserve Walnut Creek (8038 Exchange Dr) <2025-03-15 Sat 11:30>
-CLOSED: [2025-03-15 Sat 12:12]
-- big room for 1400
-- not available now
-- 100 fee with valet trash and amenities
-  - 50 dollar internet is good
-- lots of counter space
-- walk-in closet
-- b1 has double sink
-- 7/10
-*** DONE Windsor Commons (5900 Westminster Dr) <2025-03-15 Sat 13:00>
-CLOSED: [2025-03-19 Wed 12:58]
-*** DONE St Johns (601 W St Johns Ave) <2025-03-15 Sat 10:00>
-CLOSED: [2025-03-15 Sat 10:57]
-:LOGBOOK:
-- State "DONE"       from "TODO"       [2025-03-15 Sat 10:57]
-- State "TODO"       from              [2025-03-15 Sat 10:52]
-:END:
-- 6/10
-- amenities good 
-- washer dryer 
-- kitchen good
-- reviews bad
-*** KILL Johnny (613 W St Johns Ave) <2025-03-17 Mon 9:45>
-CLOSED: [2025-03-19 Wed 12:58]
-* Tasks
-** DONE Lunch with Ieleen chick-fil-a <2025-03-04 Tue>
-CLOSED: [2025-03-05 Wed 11:12]
-** DONE Go to CVS <2025-03-04 Tue>
-CLOSED: [2025-03-05 Wed 11:13]
-*** KILL Bring cough drop to ieleen
-CLOSED: [2025-03-05 Wed 11:13]
-*** KILL Bring mask to ieleen
-CLOSED: [2025-03-05 Wed 11:13]
-** DONE Dark room meeting with ceren et al <2025-03-05 Wed 12:00>
-CLOSED: [2025-03-10 Mon 09:45]
-** DONE sign tax form and send to lawyer
-CLOSED: [2025-02-17 Mon 18:36]
-** DONE Send Ieleen's paystub to lawyer
-CLOSED: [2025-02-13 Thu 13:17] DEADLINE: <2025-02-14 Fri>
+** talking to the insurance lady <2025-05-05 Mon 17:00>
+** Dentist appointment <2025-05-15 Thu 15:30>

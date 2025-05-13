@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f2b91486-8ce7-47c9-9aad-3bc61fcea944
+:END:
+#+title: Image Generation
+
+This is the mater node for anything image generation related

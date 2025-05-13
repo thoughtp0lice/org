@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a45c1c44-1d54-40c4-bc5e-92bc66ed6843
+:ROAM_REFS: @beckTestdrivenDevelopmentExample2002
+:END:
+#+title: Test-Driven Development : By Example - Beck, Kent

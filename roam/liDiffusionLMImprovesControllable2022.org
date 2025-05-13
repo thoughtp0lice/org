@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       fbdfab7f-361a-42db-b37c-c66cc7d98215
+:ROAM_REFS: @liDiffusionLMImprovesControllable2022
+:END:
+#+title: Diffusion-LM Improves Controllable Text Generation - Li, Xiang Lisa and Thickstun, John and Gulrajani, Ishaan and Liang, Percy and Hashimoto, Tatsunori B.
+
+- [[id:6f4c3a14-64a5-4510-b052-96e03c8d2920][Diffusion]] for text so it's also an [[id:374d0242-6d95-4b4f-adaa-1f7211b39f59][LLM]]
+- add extra encoding and decoding step and changes loss accordingly
+- steering the denoising to condition on things

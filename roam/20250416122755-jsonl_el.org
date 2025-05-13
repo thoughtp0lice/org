@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       7d0ff71a-905d-4b0f-9b8e-26b0460fb9ab
+:END:
+#+title: Jsonl.el
+
+This is a [[id:ffdb9a7a-aa1f-4954-9d61-6abbd5a12e4b][Emacs Project]] to build a major mode to view and edit .jsonl file
+Feature wish list:
+- [ ] parse and hight light jsonl file
+- [ ] view one line of jsonl as a formatted JSON object in a separate window
+- [ ] edit one line of jsonl as a formatted JSON object in the viewing window

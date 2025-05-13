@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       1f6d5f41-2680-422f-80ba-c2ae9adb23d4
+:ROAM_REFS: @liuExtractingInlineTests2023
+:END:
+#+title: Extracting Inline Tests from Unit Tests - Liu, Yu and Nie, Pengyu and Guo, Anna and Gligoric, Milos and Legunsen, Owolabi
+#+filetags: :unread:
+
+- This is a [[id:dba50d2b-5de9-45e2-a400-8e649bcd9d51][Software Engineering]] paper from Milos Lab
+- I need to read it and checkout it's code base

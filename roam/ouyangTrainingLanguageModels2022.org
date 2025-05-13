@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       db624c46-6b76-4530-b54e-8766c6f72e90
+:ROAM_REFS: @ouyangTrainingLanguageModels2022
+:END:
+#+title: Training Language Models to Follow Instructions with Human Feedback - Ouyang, Long and Wu, Jeff and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll L. and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and Schulman, John and Hilton, Jacob and Kelton, Fraser and Miller, Luke and Simens, Maddie and Askell, Amanda and Welinder, Peter and Christiano, Paul and Leike, Jan and Lowe, Ryan
+
+* Method
+- collect demonstration data, fine-tune on it
+- collect preference data and train reward model
+- optimize policy with PPO
+** Dataset
+- They got it from a GPT playground and GPT API
+- Ask labelers to give preference and demonstration
+** Models
+- Supervised fine-tuning (SFT)
+- Reward modeling (RM)
+  - \( \text{loss}(\theta) = - \frac{1}{\binom{K}{2}}E_{(x, y_{w}, y_{l}) \sim D} [\log (\sigma (r_{\theta}(x,y_{w}) - r_{\theta}(x, y_{l})))] \)
+  - Better than shuffling pairs in to a dataset since it's more computationally cheap and don't pass each prompt \(\binom{K}{2}\) times.
+- Reinforcement learning (RL), just PPO

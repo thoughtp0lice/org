@@ -3,4 +3,4 @@
 :END:
 #+title: Diffusion
 
-It's a generative AI model sampling from data distribution by reversing a Markov Chain that adds noise
+It's a generative AI model sampling from data distribution by reversing a Markov Chain that adds noise. It's commonly used for [[id:f2b91486-8ce7-47c9-9aad-3bc61fcea944][Image Generation]]

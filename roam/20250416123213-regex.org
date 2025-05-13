@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5ef1330d-6bb8-4a0b-a755-2b2042a5ac13
+:END:
+#+title: regex.el
+
+This is [[id:ffdb9a7a-aa1f-4954-9d61-6abbd5a12e4b][Emacs Project]] to build a tool to edit regex patterns like they do in [[regexr][https://regexr.com/]]

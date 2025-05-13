@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       bf5cef51-68c2-4b32-8215-eb783c97aa63
+:ROAM_REFS: @rasnayakaEmpiricalStudyUsage2024
+:END:
+#+title: An Empirical Study on Usage and Perceptions of LLMs in a Software Engineering Project - Rasnayaka, Sanka and Wang, Guanlin and Shariffdeen, Ridwan and Iyer, Ganesh Neelakanta
+#+filetags: :unread:
+
+A study of LLM usage in SE this is a [[id:94848a5e-b764-46a9-a79b-5043c4a30bc5][LLM4SE]] work

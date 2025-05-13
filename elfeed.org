@@ -2,13 +2,30 @@
 
 * root :elfeed:
 ** Tech :tech:
-*** General Tech :general-tech:
-**** Hacker News :hacker-news:
-***** [[https://hnrss.org/frontpage][HN Frontpage]
-***** [[https://hnrss.org/bestcomments][HN Comments]]
+*** Wired :magazine:
+**** [[https://www.wired.com/feed/tag/ai/latest/rss][Wired AI]] :ai:
+**** [[https://www.wired.com/feed/tag/ai/latest/rss][Wired Science]] :science:
+*** Hacker News :hackernews:
+**** [[https://hnrss.org/frontpage][HN Frontage]]
+**** [[https://hnrss.org/bestcomments][HN Comments]]
+*** Terminaltrove :terminal:
+**** [[https://terminaltrove.com/totw.xml][Tool of the week]] :tool:
+**** [[https://terminaltrove.com/blog.xml][Terminal Trove Blog]] :tool:
 *** Programming :programming:
 **** [[https://this-week-in-rust.org/rss.xml][This Week in Rust]] :rust:
+**** [[https://blog.codinghorror.com/rss][Coding Horror]] :opinion:
 ** Comic :comic:
 *** [[https://xkcd.com/rss.xml][xkcd]]
+*** [[https://falseknees.com/rss.xml][False Knees]]
 ** Cooking :cooking:
 *** [[https://www.seriouseats.com/feeds/google-news][serious eats]]
+*** [[https://vickypham.com/feed/][Vicky Pham]] :viet:
+*** [[https://chinesecookingdemystified.substack.com/feed][Chinese Cooking Demystified]] :china:blog:
+** Shit Post :shitpost:
+*** [[https://www.reddit.com/r/196/.rss][196]] :gay:reddit:
+** Gossip :gossip:
+*** [[https://www.reddit.com/r/Fauxmoi/.rss][Fauxmoi]] :reddit:
+** World :news:
+*** [[https://foodandpower.substack.com/feed][Food and power]] :blog:substack:market:us:
+*** [[https://heathercoxrichardson.substack.com/feed][Letters from an American]] :us:blog:
+#  LocalWords:  Terminaltrove LocalWords Elfeed

@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       3f60662a-ea94-47ca-9c42-69ebda7ffce4
+:ROAM_REFS: @liuFlowStraightFast2022a
+:END:
+#+title: Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow - Liu, Xingchao and Gong, Chengyue and Liu, Qiang
+#+STARTUP: latexpreview
+
+* A [[id:f2b91486-8ce7-47c9-9aad-3bc61fcea944][Image Generation]] model alternative to [[id:6f4c3a14-64a5-4510-b052-96e03c8d2920][Diffusion]] and actually very similar
+* Method
+** Rectified flow
+- it's an ode that transport data from one distribution to another.
+  - similar to what they talked about in [[id:e91e125a-4c9b-4c50-966a-6c7e8c478a35][Elucidating the Design Space of Diffusion-Based Generative Models]]
+- \(dZ_{t}=v(Z_{t}, t)dt\) converts \(Z_{0} \sim \pi_{0} \) to \(Z_{1} \sim \pi_{1} \)
+  - \(v: \mathbb{R}^{d} \to \mathbb{R}^{d} \) set to drive flow to follow direction \(X_{0}\)
+  - optimized by solving: \( \min_{v} \int_{0}^{1} \mathbb{E}[\lVert (X_{1}-X_{0}) - v(X_{t}, t) \rVert^{2}]dt \) with \( X_{t} = tX_{1} + (1-t)X_{0} \)
+** Flows avoid crossing
+- The differential paths of data pairs do not cross each other
+- checkout the paper image for more detailes
+** Reflow, straightening, fast simulation
+- instead of getting pairs by randomly sampling, getting pairs from a rectified flow makes the path even straighter
+- this is called reflow
+- When it's very straight we can just distill it for a one step generation

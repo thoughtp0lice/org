@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ffdb9a7a-aa1f-4954-9d61-6abbd5a12e4b
+:END:
+#+title: Emacs Project
+
+This is a mater node for the [[id:e73a2a1c-99ac-4723-9639-08bdb0d94bfd][Personal Project]] that is for building a emacs library
