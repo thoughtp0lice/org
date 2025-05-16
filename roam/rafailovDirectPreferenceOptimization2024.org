@@ -5,3 +5,4 @@
 #+title: Direct Preference Optimization: Your Language Model Is Secretly a Reward Model - Rafailov, Rafael and Sharma, Archit and Mitchell, Eric and Ermon, Stefano and Manning, Christopher D. and Finn, Chelsea
 
 - instead of having a score model just directly train it
+- for [[id:374d0242-6d95-4b4f-adaa-1f7211b39f59][LLM]] RLHF

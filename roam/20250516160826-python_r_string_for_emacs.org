@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       68bd361e-70a6-432f-91d5-18528be5d3c2
+:END:
+#+title: Python R String for Emacs
+
+This is a [[id:ffdb9a7a-aa1f-4954-9d61-6abbd5a12e4b][Emacs Project]] idea to add proper high-light for Python R string.

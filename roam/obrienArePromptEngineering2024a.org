@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       09030416-05c0-44ad-a85a-70d07e603060
+:ROAM_REFS: @obrienArePromptEngineering2024a
+:END:
+#+title: Are Prompt Engineering and TODO Comments Friends or Foes? An Evaluation on GitHub Copilot - OBrien, David and Biswas, Sumon and Imtiaz, Sayem Mohammad and Abdalkareem, Rabe and Shihab, Emad and Rajan, Hridesh
+#+filetags: :unread:
+
+related to [[id:374d0242-6d95-4b4f-adaa-1f7211b39f59][LLM]]
+
+- Adding TODO comment make the problem described in TODO reproduce
+- Can combine TODO comment and doc-string to improve

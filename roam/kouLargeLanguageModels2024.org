@@ -4,3 +4,5 @@
 :END:
 #+title: Do Large Language Models Pay Similar Attention Like Human Programmers When Generating Code? - Kou, Bonan and Chen, Shengmai and Wang, Zhijie and Ma, Lei and Zhang, Tianyi
 #+filetags: :unread:
+
+related to [[id:94848a5e-b764-46a9-a79b-5043c4a30bc5][LLM4SE]]

@@ -3,6 +3,8 @@
 :END:
 #+title: Yogurt Batch Plan
 
+[[id:dd229915-2b6d-493e-907e-cf11192c74e8][Personal Stuff]]
+
 * Try [[https://www.positivelyprobiotic.com/shop-all-cultures/p/beijing-thermophilic-heirloom-yogurt-starter-culture][Beijing Thermophilic Heirloom Yogurt Starter Culture]]
 
 Beijing yogurt is a drinkable yogurt. Popular in China and Northern Vietnam. Traditionally served in ceramic containers that are usually returned for reuse. It’s equal part sweet and tart. So delicious.

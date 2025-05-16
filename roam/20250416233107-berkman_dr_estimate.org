@@ -1,9 +1,0 @@
-:PROPERTIES:
-:ID:       2d10316c-42f3-48d7-8beb-ecca3e1a9863
-:END:
-#+title: Berkman Dr Estimate
-
-Mortgage: 222500 at 6.75% -> 794.53
-Property tax: 3315~4334 -> 276 ~ 361
-HOA -> 295
-Total: 1365 ~ 1450

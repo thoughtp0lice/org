@@ -25,6 +25,8 @@
 *** [[https://www.reddit.com/r/196/.rss][196]] :gay:reddit:
 ** Gossip :gossip:
 *** [[https://www.reddit.com/r/Fauxmoi/.rss][Fauxmoi]] :reddit:
+** Trivia :trivia:
+*** [[http://feeds.feedburner.com/enwp/DidYouKnow][Did you know]] :wikipedia:
 ** World :news:
 *** [[https://foodandpower.substack.com/feed][Food and power]] :blog:substack:market:us:
 *** [[https://heathercoxrichardson.substack.com/feed][Letters from an American]] :us:blog:

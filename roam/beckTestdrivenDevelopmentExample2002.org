@@ -3,3 +3,6 @@
 :ROAM_REFS: @beckTestdrivenDevelopmentExample2002
 :END:
 #+title: Test-Driven Development : By Example - Beck, Kent
+
+
+A book? related to [[id:dba50d2b-5de9-45e2-a400-8e649bcd9d51][Software Engineering]]

@@ -3,3 +3,5 @@
 :ROAM_REFS: @sohl-dicksteinDeepUnsupervisedLearning2015
 :END:
 #+title: Deep Unsupervised Learning Using Nonequilibrium Thermodynamics
+
+Core paper for [[id:6f4c3a14-64a5-4510-b052-96e03c8d2920][Diffusion]]

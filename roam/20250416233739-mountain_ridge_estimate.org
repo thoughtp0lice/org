@@ -1,9 +1,0 @@
-:PROPERTIES:
-:ID:       95f5f90c-75f6-4edc-a749-c628c4a69a02
-:END:
-#+title: Mountain Ridge Estimate
-
-Mortgage: 200000 at 6.75% -> 648.60
-Property Tax: 3,741 ~ 4,917 -> 311.75 ~ 409.75
-HOA -> 315
-Total 1275 ~ 1373

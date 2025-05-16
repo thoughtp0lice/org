@@ -4,6 +4,8 @@
 :END:
 #+title: Training Language Models to Follow Instructions with Human Feedback - Ouyang, Long and Wu, Jeff and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll L. and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and Schulman, John and Hilton, Jacob and Kelton, Fraser and Miller, Luke and Simens, Maddie and Askell, Amanda and Welinder, Peter and Christiano, Paul and Leike, Jan and Lowe, Ryan
 
+- For [[id:374d0242-6d95-4b4f-adaa-1f7211b39f59][LLM]] RLHF like [[id:7e61e67c-765c-4bb8-9407-6e9d6bcb9d2f][Direct Preference Optimization: Your Language Model Is Secretly a Reward Model - Rafailov, Rafael and Sharma, Archit and Mitchell, Eric and Ermon, Stefano and Manning, Christopher D. and Finn, Chelsea]]
+
 * Method
 - collect demonstration data, fine-tune on it
 - collect preference data and train reward model

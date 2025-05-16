@@ -4,6 +4,7 @@
 :END:
 #+title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
 
+Used in [[id:374d0242-6d95-4b4f-adaa-1f7211b39f59][LLM]]
 * Method
 ** RAG-Sequence
 - each sequence probability marginalized over all top-k documents

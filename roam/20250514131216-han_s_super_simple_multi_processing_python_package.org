@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       2e7b1eb7-86d3-4444-9328-124aa045ca1a
+:END:
+#+title: Han's super simple multi processing python package
+
+It's a [[id:a23bf13b-4d1d-44a6-8fa0-991370014ec5][Project Idea]]
+
+Setup a package for multi processing experiment in python
+make printing and logger easer for multi processing

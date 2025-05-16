@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       dd229915-2b6d-493e-907e-cf11192c74e8
+:END:
+#+title: Personal Stuff
+
+This is the master node for anything personal related
