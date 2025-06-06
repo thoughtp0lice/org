@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       2079cff8-8828-4c9c-b865-d423763fee4d
+:ROAM_REFS: @robillardDesigningRobustJava
+:END:
+#+title: Designing Robust Java Programs with Exceptions - Robillard, Martin R and Murphy, Gail C
+
+[[id:f4b72a4d-157c-4dc5-8d1a-82f7ad17bcc7][Throwgen Related Work]] potential

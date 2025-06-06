@@ -14,6 +14,7 @@
 *** Programming :programming:
 **** [[https://this-week-in-rust.org/rss.xml][This Week in Rust]] :rust:
 **** [[https://blog.codinghorror.com/rss][Coding Horror]] :opinion:
+**** [[https://ratfactor.com/atom.xml][ratfactor]] :opinion:blog:
 ** Comic :comic:
 *** [[https://xkcd.com/rss.xml][xkcd]]
 *** [[https://falseknees.com/rss.xml][False Knees]]
@@ -30,4 +31,6 @@
 ** World :news:
 *** [[https://foodandpower.substack.com/feed][Food and power]] :blog:substack:market:us:
 *** [[https://heathercoxrichardson.substack.com/feed][Letters from an American]] :us:blog:
+** Home :home:
+*** [[https://ikeahackers.net/feed][IKEA Hackers]] :blog:ikea:
 #  LocalWords:  Terminaltrove LocalWords Elfeed

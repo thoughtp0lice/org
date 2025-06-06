@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       dc6d2827-c5f0-4d4f-9f6c-967b1e6dc775
+:ROAM_REFS: @renMisuseMasteryEnhancing2023
+:END:
+#+title: From Misuse to Mastery: Enhancing Code Generation with Knowledge-Driven AI Chaining - Ren, Xiaoxue and Ye, Xinyuan and Zhao, Dehai and Xing, Zhenchang and Yang, Xiaohu
+#+filetags: :exception-handling:
+[cite:@renMisuseMasteryEnhancing2023]
+This is a potential [[id:f4b72a4d-157c-4dc5-8d1a-82f7ad17bcc7][Throwgen Related Work]]

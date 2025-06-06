@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       42665c73-ddfb-41d0-95e6-644f794c01ec
+:ROAM_REFS: @jimenezSWEbenchCanLanguage2024
+:END:
+#+title: SWE-bench: Can Language Models Resolve Real-World GitHub Issues? - Jimenez, Carlos E. and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik
+
+a benchmark for [[id:94848a5e-b764-46a9-a79b-5043c4a30bc5][LLM4SE]]

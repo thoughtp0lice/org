@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       03829e10-90fc-47f4-9483-28b1d3e7042c
+:END:
+#+title: Milos Recommand
+
+- Learning Deep Semantics for Test Completion [cite:@nieLearningDeepSemantics2023a]
+- Object Graph Programming
+   https://users.ece.utexas.edu/~gligoric/papers/ThimmaiahETAL24OGO.pdf
+- CoditT5: Pretraining for Source Code and Natural Language Editing
+   https://users.ece.utexas.edu/~gligoric/papers/ZhangETAL22CoditT5.pdf
+- Inline Tests
+   https://users.ece.utexas.edu/~gligoric/papers/LiuETAL22InlineTests.pdf
+- Compiler Testing using Template Java Programs
+   https://users.ece.utexas.edu/~gligoric/papers/ZangETAL22JAttack.pdf
+- A Performance Portability Framework for Python
+   https://users.ece.utexas.edu/~gligoric/papers/AlAwarETAL21PyKokkos.pdf
+- Learning to Update Natural Language Comments Based on Code Changes
+   https://users.ece.utexas.edu/~gligoric/papers/PanthaplackelETAL20CommentUpdate.pdf
+- Deep Generation of Coq Lemma Names Using Elaborated Terms
+   https://users.ece.utexas.edu/~gligoric/papers/NieETAL20Roosterize.pdf
+- Design, Implementation, and Application of GPU-Based Java Bytecode Interpreters
+   https://users.ece.utexas.edu/~gligoric/papers/CelikETAL19GVM.pdf
+- A Framework for Writing Trigger-Action Todo Comments in Executable Format
+   https://users.ece.utexas.edu/~gligoric/papers/NieETAL19TrigIt.pdf
+- Regression Test Selection Across JVM Boundaries
+   https://users.ece.utexas.edu/~gligoric/papers/CelikETAL17RTSLinux.pdf
+- Practical Regression Test Selection with Dynamic File Dependencies
+   https://users.ece.utexas.edu/~gligoric/papers/GligoricETAL15Ekstazi.pdf
+- Regression Test Selection for Distributed Software Histories
+   https://users.ece.utexas.edu/~gligoric/papers/GligoricETAL14TestSelectionDVCS.pdf
+- IMUnit: Improved Multithreaded Unit Testing
+   https://users.ece.utexas.edu/~gligoric/papers/JagannathETAL10IMUnitPosition.pdf
+- Test Generation through Programming in UDITA
+   https://users.ece.utexas.edu/~gligoric/papers/GligoricETAL10UDITA.pdf

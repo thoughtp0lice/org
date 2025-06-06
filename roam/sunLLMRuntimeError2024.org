@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b8a80d72-596a-4fa0-a8e3-6120840faacc
+:ROAM_REFS: @sunLLMRuntimeError2024
+:END:
+#+title: LLM as Runtime Error Handler: A Promising Pathway to Adaptive Self-Healing of Software Systems - Sun, Zhensu and Zhu, Haotian and Xu, Bowen and Du, Xiaoning and Li, Li and Lo, David
+#+filetags: :exception-handling:
+
+This is a potential [[id:f4b72a4d-157c-4dc5-8d1a-82f7ad17bcc7][Throwgen Related Work]]

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       c049b935-5c58-4b2d-a1ef-83cb2dd9b07c
+:ROAM_REFS: @zhangSeekerExceptionSafety2024
+:END:
+#+title: Seeker: Towards Exception Safety Code Generation with Intermediate Language Agents Framework - Zhang, Xuanming and Chen, Yuxuan and Zheng, Yiming and Zhang, Zhexin and Yuan, Yuan and Huang, Minlie
+#+filetags: :exception-handling:
+
+This is a potential [[id:f4b72a4d-157c-4dc5-8d1a-82f7ad17bcc7][Throwgen Related Work]]
+[cite:@zhangSeekerExceptionSafety2024]

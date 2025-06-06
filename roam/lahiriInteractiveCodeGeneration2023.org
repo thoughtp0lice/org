@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       93e4833e-f710-48e7-a687-3420ce5c8eae
+:ROAM_REFS: @lahiriInteractiveCodeGeneration2023
+:END:
+#+title: Interactive Code Generation via Test-Driven User-Intent Formalization - Lahiri, Shuvendu K. and Fakhoury, Sarah and Naik, Aaditya and Sakkas, Georgios and Chakraborty, Saikat and Musuvathi, Madanlal and Choudhury, Piali and von Veh, Curtis and Inala, Jeevana Priya and Wang, Chenglong and Gao, Jianfeng
+#+filetags: :tdd:
+
+This is a potential [[id:f4b72a4d-157c-4dc5-8d1a-82f7ad17bcc7][Throwgen Related Work]]

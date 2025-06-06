@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       f4b72a4d-157c-4dc5-8d1a-82f7ad17bcc7
+:END:
+#+title: Throwgen Related Work
+
+This is the master node of all throwgen related work
+
+* Test Driven Development
+[cite:@sunLLMRuntimeError2024][cite:@caiProgrammingAssistantException2024][cite:@zhangSeekerExceptionSafety2024][cite:@renMisuseMasteryEnhancing2023][cite:@zhangLearningHandleExceptions2020]
+
+- mostly does not do exception handling
+- uses generate -> repair loop
+* Exception handling code generation
+[cite:@pancurImpactTestdrivenDevelopment2011][cite:@lahiriInteractiveCodeGeneration2023][cite:@fakhouryLLMBasedTestDrivenInteractive2024][cite:@mathewsTestDrivenDevelopmentCode2024]- are not TDD
+
+* Exception survey
+[cite:@liuNotAllExceptions2025][cite:@robillardDesigningRobustJava]
+
+#  LocalWords:  throwgen

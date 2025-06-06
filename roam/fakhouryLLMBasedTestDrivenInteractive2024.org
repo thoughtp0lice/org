@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1d3b8cb5-a145-46a6-8c02-07f92752b1e9
+:ROAM_REFS: @fakhouryLLMBasedTestDrivenInteractive2024
+:END:
+#+title: LLM-Based Test-Driven Interactive Code Generation: User Study and Empirical Evaluation - Fakhoury, Sarah and Naik, Aaditya and Sakkas, Georgios and Chakraborty, Saikat and Lahiri, Shuvendu K.
+#+filetags: :tdd:
+
+This is a potential [[id:f4b72a4d-157c-4dc5-8d1a-82f7ad17bcc7][Throwgen Related Work]]

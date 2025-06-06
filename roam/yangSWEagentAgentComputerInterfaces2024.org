@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       39067a74-727e-4b09-bbb7-667b48ee0319
+:ROAM_REFS: @yangSWEagentAgentComputerInterfaces2024
+:END:
+#+title: SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering - Yang, John and Jimenez, Carlos E. and Wettig, Alexander and Lieret, Kilian and Yao, Shunyu and Narasimhan, Karthik and Press, Ofir
+
+A paper for [[id:94848a5e-b764-46a9-a79b-5043c4a30bc5][LLM4SE]] developed by the people who does [[id:42665c73-ddfb-41d0-95e6-644f794c01ec][SWE-bench: Can Language Models Resolve Real-World GitHub Issues? - Jimenez, Carlos E. and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik]]
+
+Pretty much allows agent to make decision by browsing files and applying patches
