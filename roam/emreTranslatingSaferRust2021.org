@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       9dbf584c-74b9-40ee-8ec7-228965ffac9d
+:ROAM_REFS: @emreTranslatingSaferRust2021
+:END:
+#+title: Translating C to Safer Rust - Emre, Mehmet and Schroeder, Ryan and Dewey, Kyle and Hardekopf, Ben
+
+A [[id:7bda4624-f0e3-46b7-9f66-098c9802ad92][Rust2C related works]]
+TLDR: fix raw pointers in automatically translated Rust code from C code
+
+- Symbolic transpiler closely follow the original C code and bypasses the safety checks
+- Contributions
+  - Sources and causes of unsafely in translated rust
+  - Techniques to automatically generating safer Rust code by addressing one common cause of unsafely.
+    - specifically on the use of raw pointers in the translated programs.
+
+#  LocalWords:  transpiler

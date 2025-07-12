@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       7bda4624-f0e3-46b7-9f66-098c9802ad92
+:END:
+#+title: Rust2C related works
+
+* C2Rust Tools
+- [X] Citrus [cite:@CitrusCitrusGitLab2024]
+- [X] c2rust [cite:@C2rust]
+- [X] corrode [cite:@sharpJameysharpCorrode2025]
+
+* Symbolic C2Rust Techniques
+- [X] Translating C to Safer Rust [cite:@emreTranslatingSaferRust2021]
+- [ ] Ownership Guided C to Rust Translation [cite:@zhangOwnershipGuidedRust2023]
+- [ ] Don’t Write, but Return: Replacing Output Parameters with Algebraic Data Types in C-to-Rust Translation [cite:@hongDontWriteReturn2024]
+- [ ] GenC2Rust: Towards Generating Generic Rust Code from C [cite:@wuGenC2RustGeneratingGeneric2025]
+- [ ] To Tag, or Not to Tag: Translating C's Unions to Rust's Tagged Unions[cite:@hongTagNotTag2024]
+
+* LLM based C2Rust
+- [ ] SpecTra: Enhancing the Code Translation Ability of Language Models by Generating Multi-Modal Specifications[cite:@nitinSpecTraEnhancingCode2024]
+- [X] Context-aware Code Segmentation for C-to-Rust Translation using Large Language Models [cite:@shiraishiContextawareCodeSegmentation2024]
+- [X] LLM-Driven Multi-step Translation from C to Rust using Static Analysis [cite:@zhouLLMDrivenMultistepTranslation2025]
+- [X] SafeTrans: LLM-assisted Transpilation from C to Rust [cite:@farrukhSafeTransLLMassistedTranspilation2025]
+- [X] Scalable, Validated Code Translation of Entire Projects using Large Language Models [cite:@zhangScalableValidatedCode2024]
+- [X] C2SaferRust: Transforming C Projects into Safer Rust with NeuroSymbolic Techniques [cite:@nitinC2SaferRustTransformingProjects2025]
+
+* Misc
+- [X] Translating C To Rust: Lessons from a User Study [cite:@liTranslatingRustLessons2025]
+
+* Benchmark
+- [X] CRUST-Bench: A Comprehensive Benchmark for C-to-safe-Rust Transpilation [cite:@khatryCRUSTBenchComprehensiveBenchmark2025]
+- [ ] Syzygy: Dual Code-Test C to (safe) Rust Translation using LLMs and Dynamic Analysis [cite:@shettySyzygyDualCodeTest2024]
+- [ ] ComPile: A Large IR Dataset from Production Sources [cite:@grossmanComPileLargeIR2024]
+- [X] Towards Translating Real-World Code with LLMs: A Study of Translating to Rust [cite:@eniserTranslatingRealWorldCode2025]
+- [X] An Empirical Study of C to Rust Transpilers [cite:@anonymousEmpiricalStudyRust2023]
+
+* Eval Tools
+- Rust-Clippy[cite:@RustlangRustclippy2025]
+- bolero[cite:@bythewayCamshaftBolero2025] rust fuzzer
+- libfuzzer[cite:@LibFuzzerLibraryCoverageguided]
+#  LocalWords:  LLMs Transpilation LLM Transpilers NeuroSymbolic Clippy

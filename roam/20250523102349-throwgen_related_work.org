@@ -5,13 +5,36 @@
 
 This is the master node of all throwgen related work
 
-* Test Driven Development
-[cite:@sunLLMRuntimeError2024][cite:@caiProgrammingAssistantException2024][cite:@zhangSeekerExceptionSafety2024][cite:@renMisuseMasteryEnhancing2023][cite:@zhangLearningHandleExceptions2020]
+* Exception handling code generation
+- LLM as Runtime Error Handler: A Promising Pathway to Adaptive Self-Healing of Software Systems [cite:@sunLLMRuntimeError2024]
+  - When an unexpected, thus unhandled, runtime error occurs, Healer will be activated to generate a piece of error-handling code with the help of its internal LLM and the code will be executed inside the runtime environment owned by the framework to obtain a rectified program state from which the program should continue its execution.
+- Programming Assistant for Exception Handling with CodeBERT [cite:@caiProgrammingAssistantException2024]
+  - We propose Neurex, an exception handling recommender that learns from complete code, and accepts a given Java code snippet and recommends 1) if a try-catch block is needed, 2) what statements need to be placed in a try block, and 3) what exception types need to be caught in the catch clause.
+- Seeker: Towards Exception Safety Code Generation with Intermediate Language Agents Framework [cite:@zhangSeekerExceptionSafety2024]
+  - To enhance code robustness by leveraging best exception handling practices, we propose Seeker, a framework that decomposes exception handling into five specialized tasks managed by distinct agents: Scanner: Responsible for scanning the code into manageable unit, Detector: Responsible for detecting the fragile unit, Predator: Predate the exception block and capture possible exceptions, Ranker: Sorts exception handling strategies according to certain criteria and selects appropriate exceptions, Handler: Responsible for performing the final exception handling.
+- From Misuse to Mastery: Enhancing Code Generation with Knowledge-Driven AI Chaining [cite:@renMisuseMasteryEnhancing2023]
+  - we propose a novel Knowledge-driven Prompt Chaining-based code generation approach, name KPC, which decomposes code generation into an AI chain with iterative check-rewrite steps and chains fine-grained knowledge-driven prompts to assist LLMs in considering exception-handling specifications.
+- Learning to Handle Exceptions [cite:@zhangLearningHandleExceptions2020]
+  - Try block localization. We design a locator that jointly learns to determine whether or not a given code fragment needs to handle exceptions and localize where to put the try block if it does.
+  - Catch block generation. Different from previous work such as [cite:@nguyenRecommendingExceptionHandling2019], we take all the code before the catch blocks as the context instead of simply relying on the try blocks.
+- Recommending Exception Handling Code [cite:@nguyenRecommendingExceptionHandling2019]
+  - ExAssist predicts what types of exception could occur in a given piece of code and recommends proper exception handling code for such exceptions.
 
 - mostly does not do exception handling
 - uses generate -> repair loop
-* Exception handling code generation
-[cite:@pancurImpactTestdrivenDevelopment2011][cite:@lahiriInteractiveCodeGeneration2023][cite:@fakhouryLLMBasedTestDrivenInteractive2024][cite:@mathewsTestDrivenDevelopmentCode2024]- are not TDD
+* Test driven development
+- LLM-based Test-driven Interactive Code Generation: User Study and Empirical Evaluation[cite:@fakhouryLLMBasedTestDrivenInteractive2024]
+- Test-Driven Development for Code Generation [cite:@mathewsTestDrivenDevelopmentCode2024]
+  - Coder Agent: that generate code
+  - Remediation Agent: fix the generated code based on test output
+- are not TDD
+* Fault localization
+- survey [cite:@wongSurveySoftwareFault2016]
+- slicing [cite:@kusumotoExperimentalEvaluationProgram2002][cite:@soremekunLocatingFaultsProgram2021][cite:@wotawaFaultLocalizationBased2010a][cite:@zhangLocatingExecutionOmission]
+- Spectrum
+  [cite:@renieresFaultLocalizationNearest2003][cite:@jonesVisualizationTestInformation][cite:@GroupingBasedStrategyImprove]
+
+
 
 * Exception survey
 [cite:@liuNotAllExceptions2025][cite:@robillardDesigningRobustJava]

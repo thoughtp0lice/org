@@ -3,5 +3,7 @@
 * Reading
 * Events
 * Appointments
-** talking to the insurance lady <2025-05-05 Mon 17:00>
-** Dentist appointment <2025-05-15 Thu 15:30>
+** TODO Schedule appointment with dentist
+** TODO Move out CD money <2025-06-13 Fri>
+** TODO Driver license renewal <2025-06-20 Thu>
+Location: 13730 Research Blvd Austin

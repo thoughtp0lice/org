@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       03ca2fe7-0032-4b1d-b7f4-1f45e94f4710
+:ROAM_REFS: @liTranslatingRustLessons2025
+:END:
+#+title: Translating C To Rust: Lessons from a User Study - Li, Ruishi and Wang, Bo and Li, Tianyu and Saxena, Prateek and Kundu, Ashish
+
+A [[id:7bda4624-f0e3-46b7-9f66-098c9802ad92][Rust2C related works]]
+
+Ask human to translate C to Rust
+
+* Lessons learned
+- User semantically lift from the low-level abstractions used in C to re-express the logic in Rust
+  - e.g. char* -> String, Vec<u8>, Box<[u8]>
+- That resulting Rust translations often contain zero-cost statically-checked safety abstractions
+- Nearly all Rust translations have functional discrepancies compared with the corresponding C code.

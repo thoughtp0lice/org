@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       28c524ca-a6e0-4622-b108-5da313df3e8a
+:ROAM_REFS: @zhouLLMDrivenMultistepTranslation2025
+:END:
+#+title: LLM-Driven Multi-step Translation from C to Rust Using Static Analysis - Zhou, Tianyang and Lin, Haowen and Jha, Somesh and Christodorescu, Mihai and Levchenko, Kirill and Chandrasekaran, Varun
+
+A [[id:7bda4624-f0e3-46b7-9f66-098c9802ad92][Rust2C related works]]
+
+TLDR: Breakdown C code -> unidiomatic rust -> idiomatic rust
+
+* Translation
+** Unidiomatic Rust Translation
+- C2Rust[cite:@C2rust] for data type translation
+- LLM to translate global variables and functions
+- C parser to automatically extract dependencies (e.g., function signatures, data types, and global variables) and reference the corresponding Rust code
+** Idiomatic
+- Use Crown[cite:@zhangOwnershipGuidedRust2023] facilitate the translation by analyzing pointer mutability, fatness (e.g., arrays), and ownership
+- LLM assign appropriate Rust types to pointers
+* Verification
+** Verifying unidiomatic Rust code
+Just use FFI to run rust code
+** Verifying idiomatic Rust code
+- use the LLM to create a test harness for each target function
+  - inputs are converted from C data types to their corresponding Rust
+  - The output is then converted back from Rust types to C types
+* Dataset
+- Transcoder-IR[cite:@szafraniecCodeTranslationCompiler2023]
+- CodeNet[cite:@puriCodeNetLargeScaleAI2021]

@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       2774c136-ddcf-48ec-937c-8f7cf64b5a0c
+:ROAM_REFS: @nitinC2SaferRustTransformingProjects2025
+:END:
+#+title: C2SaferRust: Transforming C Projects into Safer Rust with NeuroSymbolic Techniques - Nitin, Vikram and Krishna, Rahul and do Valle, Luiz Lemos and Ray, Baishakhi
+
+A [[id:7bda4624-f0e3-46b7-9f66-098c9802ad92][Rust2C related works]]
+
+* Translation Orchestrator
+- Break project down into units and order it by dependencies
+- Break divide the function by AST subtree
+- Aided by static analysis
+- Use a call graph to order the functions, units inside functions is not ordered
+- root unit: the unit that contains the functions and all units inside
+- inner unit: the unit that is inside the function
+* Static Analyzer
+- call graph, dataflow analysis
+** Root unit
+1. The source code of the translation unit
+2. The function’s call sites
+3. Global variables used in the function
+4. Module imports used in the file
+** Inner unit
+1. The source code of the translation unit
+2. Its live-in and live-out variables
+3. Global variables used in the translation unit
+4. Module imports used in the file
+* Dataset
+- Coreutils :: split, pwd, cat, truncate, uniq, tail, and head
+
+#  LocalWords:  Orchestrator dataflow AST uniq

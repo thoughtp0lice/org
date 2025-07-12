@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       dd7a188f-9a99-4e6b-9baf-e15e84ff902f
+:ROAM_REFS: @IntelYarpgen2025
+:END:
+#+title: Intel/Yarpgen -

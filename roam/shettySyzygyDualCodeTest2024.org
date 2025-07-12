@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       dabf0c9f-77bd-4cc4-a7ab-d6db6c23a3c3
+:ROAM_REFS: @shettySyzygyDualCodeTest2024
+:END:
+#+title: Syzygy: Dual Code-Test C to (Safe) Rust Translation Using LLMs and Dynamic Analysis - Shetty, Manish and Jain, Naman and Godbole, Adwait and Seshia, Sanjit A. and Sen, Koushik
+
+A [[id:7bda4624-f0e3-46b7-9f66-098c9802ad92][Rust2C related works]]
+
+* Overview
+Translation between imperative typed languages can be conceptually thought of as a combination of two operations:
+1. converting/lifting types of variables
+2. translating expressions and statements on these variables.
+* Dynamic Specification Mining
+- Mining Specifications from C Executions.
+  - Types, Allocation sizes, Nullability, Aliasing
+- C I/O Specification
+  - Valid inputs, Internal function input capture
+* Rust Test Generation
+- C to Rust I/O Translation
+  Translate C I/O objects to Rust
+- Argument Construction LLM Tool
+  Use LLM to write a function to translate C object to rust using APIs
+* Dataset
+- UrlParser and Zopfli

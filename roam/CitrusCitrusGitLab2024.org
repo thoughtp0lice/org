@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       581143bd-fd13-417b-8b78-49806ea68bf8
+:ROAM_REFS: @CitrusCitrusGitLab2024
+:END:
+#+title: Citrus / Citrus $\cdot$ GitLab -
+
+A [[id:7bda4624-f0e3-46b7-9f66-098c9802ad92][Rust2C related works]]
+
+- This is a tool that helps convert C programs to Rust programs. It transforms C syntax to Rust syntax, but mostly ignores details of C semantics.
+- The generated programs may not run, and may even not compile. However, the tool produces readable source code that can be manually refactored into a Rust program.
+- Just surface level translation.
+- *doesn't preserve C semantic*
+- Not idiomatic
+
+#+begin_src C
+void gz_compress(FILE *in, gzFile out) {
+    char buf[BUFLEN];
+    int len;
+    int err;
+
+    for (;;) {
+        len = fread(buf, 1, sizeof(buf), in);
+        if (ferror(in)) {
+            perror("fread");
+            exit(1);
+        }
+        if (len == 0) break;
+        if (gzwrite(out, buf, (unsigned)len) != len) error(gzerror(out, &err));
+    }
+    fclose(in);
+    if (gzclose(out) != Z_OK) error("failed gzclose");
+}
+#+end_src
+
+#+begin_src rust
+#[no_mangle]
+pub unsafe extern "C" fn gz_compress(mut in_: *mut FILE, mut out: gzFile) {
+    let mut buf: [i8; 16384];
+    let mut len;
+    let mut err;
+    loop  {
+        len = fread(buf, 1, std::mem::size_of_val(&buf), in_);
+        if ferror(in_) != 0 { perror("fread"); exit(1); }
+        if len == 0 { break ; }
+        if gzwrite(out, buf, len as c_uint) != len {
+            error(gzerror(out, &mut err));
+        };
+    }
+    fclose(in_);
+    if gzclose(out) != Z_OK { error("failed gzclose"); };
+}
+#+end_src

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       41e4bf8b-e5f4-4af4-ae8b-4a9eaad41222
+:ROAM_REFS: @sharpJameysharpCorrode2025
+:END:
+#+title: Jameysharp/Corrode - Sharp, Jamey
+
+This program reads a C source file and prints an equivalent module in Rust syntax. It's intended for partial automation of migrating legacy code that was implemented in C. This tool does not fully automate the job because its output is only as safe as the input was; you should clean up the output afterward to use Rust features and idioms where appropriate.

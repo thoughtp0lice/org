@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       7dcad588-36a9-415a-b28a-5ca58998ac9d
+:ROAM_REFS: @eniserTranslatingRealWorldCode2025
+:END:
+#+title: Towards Translating Real-World Code with LLMs: A Study of Translating to Rust - Eniser, Hasan Ferit and Zhang, Hanliang and David, Cristina and Wang, Meng and Christakis, Maria and Paulsen, Brandon and Dodds, Joey and Kroening, Daniel
+
+- using fuzzer[cite:@bythewayCamshaftBolero2025][cite:@LibFuzzerLibraryCoverageguided] to test the equivalence of the generated program
+- use JSON serialization and deserialization to map between source and target programs
+
+#  LocalWords:  deserialization

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       e5818190-217f-41a3-8a78-2535768e0427
+:ROAM_REFS: @khatryCRUSTBenchComprehensiveBenchmark2025
+:END:
+#+title: CRUST-Bench: A Comprehensive Benchmark for C-to-safe-Rust Transpilation - Khatry, Anirudh and Zhang, Robert and Pan, Jia and Wang, Ziteng and Chen, Qiaochu and Durrett, Greg and Dillig, Isil
+
+A [[id:7bda4624-f0e3-46b7-9f66-098c9802ad92][Rust2C related works]]
+
+* Annotation process
+- C custom types, such as structs and enums, into their Rust equivalents
+- specify function signatures, including return types and ownership annotations
+- construct Rust test files by adapting existing C tests
+
+
+#  LocalWords:  enums

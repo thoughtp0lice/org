@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       813fa000-e0e9-459d-801a-5669ea6cffe0
+:ROAM_REFS: @qiuEvaluatingImpactModel2022
+:END:
+#+title: Evaluating the Impact of Model Scale for Compositional Generalization in Semantic Parsing - Qiu, Linlu and Shaw, Peter and Pasupat, Panupong and Shi, Tianze and Herzig, Jonathan and Pitler, Emily and Sha, Fei and Toutanova, Kristina

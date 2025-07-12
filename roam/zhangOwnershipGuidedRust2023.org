@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1bcb0b7a-0ace-4bc6-bbce-08382b6786dc
+:ROAM_REFS: @zhangOwnershipGuidedRust2023
+:END:
+#+title: Ownership Guided C to~Rust Translation - Zhang, Hanliang and David, Cristina and Yu, Yijun and Wang, Meng

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       88be2755-edea-49ed-9a68-87faf2fc6498
+:ROAM_REFS: @farrukhSafeTransLLMassistedTranspilation2025
+:END:
+#+title: SafeTrans: LLM-assisted Transpilation from C to Rust - Farrukh, Muhammad and Shah, Smeet and Coskun, Baris and Polychronakis, Michalis
+
+A [[id:7bda4624-f0e3-46b7-9f66-098c9802ad92][Rust2C related works]]
+
+- Use LLM to transpile from C to Rust
+- Repair
+  - Feed error message to LLM
+  - Design a few shot prompt for the most common compile errors and run errors
+#  LocalWords:  transpile
