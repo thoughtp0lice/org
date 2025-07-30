@@ -3,7 +3,7 @@
 :END:
 #+title: Han's super simple multi processing python package
 
-It's a [[id:a23bf13b-4d1d-44a6-8fa0-991370014ec5][Project Idea]]
+It's a [[id:e73a2a1c-99ac-4723-9639-08bdb0d94bfd][Personal Project]]
 
 Setup a package for multi processing experiment in python
 make printing and logger easer for multi processing

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       eab356ed-ad0b-410a-a450-2154cf23faeb
+:END:
+#+title: My Crazy Webpage
+
+This is a [[id:e73a2a1c-99ac-4723-9639-08bdb0d94bfd][Personal Project]] to update my personal web-site using rust. This could look like a virtual machine with windows including my information
+
+Or maybe it's like a terminal build using [[https://xtermjs.org/][xterm]]
+I can use https://github.com/matt-auckland/retro-css.git for style

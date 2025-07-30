@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       925232e1-ca50-48c8-83a0-d8078b5aa61b
+:END:
+#+title: Review: Evaluating and Improving Framework-based Parallel Code Completion with Large Language Models
+
+- May be beneficial to introduce the concept of the parallel directive
+- CodeLlama-7B-hf could be reference as CodeLlama-7B, why not use instruct?
+- lack of correctness and performance metrics
+- May be beneficial to add more discussion on difficulty cause by mixed-framework
+- LLM directly generate the method with parallel directive added, since it's closer to the LLM's training.
+
+
+* Summary
+This paper investigate the problem of inserting parallel directive codes to C/C++ functions, or "framework-based parallel code completion" (FPCC). This process involves identifying insertion points, selecting, parallel frameworks (multiple frameworks could be used in the same function), and completing parallel directive codes. The authors compiled the first dataset designed for FPCC and evaluated the performance of 6 popular LLMs on this dataset. The result shows that none of the LLM can effectively find the location to insert parallel directives or write high quality parallel directives code. To improve LLMs' performance on FPCC, the authors proposed HPCL, a Hierarchical Progressive Curriculum framework for FPCC. In HPCL, the dataset is divided by difficulty and the FPCC task training is decomposed into 3 subtasks where LLM will learn progressively throughout the curriculum. The evaluation shows HPCL's advantage over three-shot prompting, and standard supervised fine-tuning.
+
+* Comments
+** Strength
+- The paper present a interesting and important task of adding multi-framework parallel directive code to sequential function. This problem fits the pattern in real-world software development.
+- The Limitation Analysis provide a detailed analysis on the failure cases. It provides useful insight on the cases where LLM failed to add parallel directive
+- The decomposition of task is helpful for training LLM on the task of FPCC
+** Weakness
+- In quantitative analysis, no correctness or performance metrics is used. It would be much more helpful to see whether LLM generated code can compile & run correctly and compare their runtime performance with ground truth method.
+- Since mutli-framework parallel directive insertion is a main novelty of this work, it would be beneficial to include more discussion and evaluation on how picking multiple framework for one function complicates the problem
+- LLMs in this seem to be tasked to generate location, framework, and code as triplet. The authors should consider trying to let LLMs generate the method with parallel directive added directly, since the full function is closer to the data LLMs see in training.
+** Minor issues
+- In Fig. 2 the caption describe the insertion points as colored in blue. However, the entire function is colored in blue. This can cause confusion.
+- For the LLMs, it's not clear whether all models selected are instruction fine-tuned. If not, what is the reasoning behind using both instruction fine-tuned and base models in evaluation.
+- CodeLlama-7B-hf could be reference as CodeLlama-7B since "hf" just signify it's pulled from huggingface.

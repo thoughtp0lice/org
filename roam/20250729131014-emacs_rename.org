@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       c3c63e4d-b6c0-4a65-bf69-7e398d5a8a5b
+:END:
+#+title: emacs rename
+
+A personal project so all the paths are automatically refactored when the files are renamed

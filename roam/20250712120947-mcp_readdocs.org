@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       a7df7ebd-b3d0-4d86-88b2-1518da044482
+:END:
+#+title: mcp-readdocs
+
+A [[id:e73a2a1c-99ac-4723-9639-08bdb0d94bfd][Personal Project]]
+A MCP to search for the documentation given function or class and format them into markdown.
+Could support rust, javadocs, read the doc and everything that have a standard formatting

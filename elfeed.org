@@ -34,7 +34,8 @@
 ** News :news:
 *** Blogs :blog:us:
 **** [[https://foodandpower.substack.com/feed][Food and power]] :substack:market:
-**** [[https://heathercoxrichardson.substack.com/feed][Letters from an American]]
+**** [[https://heathercoxrichardson.substack.com/feed][Letters from an American]] :substack:politics:
+**** [[https://kyla.substack.com/feed][Kyla’s Newsletter]] :substack:economy:
 *** Magazine :magazine:
 **** [[https://www.newyorker.com/feed/rss][The New Yorker]]
 *** Newspaper :newspaper:

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       b85bbf02-ae39-44b0-af50-fc0933efe105
+:END:
+#+title: Efficient coding mcp
+
+A [[id:e73a2a1c-99ac-4723-9639-08bdb0d94bfd][Personal Project]]
+
+An MCP what will work with LSP to get the method names signature and doc string so it don't have to use the full code

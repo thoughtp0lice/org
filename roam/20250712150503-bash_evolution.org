@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       11ff0eeb-6547-42ca-81b8-2a3c089b35bb
+:END:
+#+title: Bash evolution
+
+A [[id:a23bf13b-4d1d-44a6-8fa0-991370014ec5][Project Idea]]
+
+Make bash work across platform and version, maybe even from bash to powershell

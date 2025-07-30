@@ -16,6 +16,7 @@
 - [ ] To Tag, or Not to Tag: Translating C's Unions to Rust's Tagged Unions[cite:@hongTagNotTag2024]
 
 * LLM based C2Rust
+- [ ] INTERTRANS: Leveraging Transitive Intermediate Translations to Enhance LLM-based Code Translation[cite:@macedoInterTransLeveragingTransitive2024]
 - [ ] SpecTra: Enhancing the Code Translation Ability of Language Models by Generating Multi-Modal Specifications[cite:@nitinSpecTraEnhancingCode2024]
 - [X] Context-aware Code Segmentation for C-to-Rust Translation using Large Language Models [cite:@shiraishiContextawareCodeSegmentation2024]
 - [X] LLM-Driven Multi-step Translation from C to Rust using Static Analysis [cite:@zhouLLMDrivenMultistepTranslation2025]
@@ -28,7 +29,7 @@
 
 * Benchmark
 - [X] CRUST-Bench: A Comprehensive Benchmark for C-to-safe-Rust Transpilation [cite:@khatryCRUSTBenchComprehensiveBenchmark2025]
-- [ ] Syzygy: Dual Code-Test C to (safe) Rust Translation using LLMs and Dynamic Analysis [cite:@shettySyzygyDualCodeTest2024]
+- [X] Syzygy: Dual Code-Test C to (safe) Rust Translation using LLMs and Dynamic Analysis [cite:@shettySyzygyDualCodeTest2024]
 - [ ] ComPile: A Large IR Dataset from Production Sources [cite:@grossmanComPileLargeIR2024]
 - [X] Towards Translating Real-World Code with LLMs: A Study of Translating to Rust [cite:@eniserTranslatingRealWorldCode2025]
 - [X] An Empirical Study of C to Rust Transpilers [cite:@anonymousEmpiricalStudyRust2023]

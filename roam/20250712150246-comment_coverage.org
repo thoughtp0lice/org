@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       9e8fc6ce-3187-4e62-a1b4-1270dec806b4
+:END:
+#+title: comment coverage
+
+This is a [[id:a23bf13b-4d1d-44a6-8fa0-991370014ec5][Project Idea]]
+
+- Checkout how much comment is covered by tests, and see how it is different from branch and line coverage
+- What about projects where comment is bad?
+- How is it different from branch coverage?

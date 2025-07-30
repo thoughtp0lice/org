@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8be54aea-32d3-4933-82dc-64d771a5624b
+:END:
+#+title: Random work stuff
+
+This is a master node for random work stuff

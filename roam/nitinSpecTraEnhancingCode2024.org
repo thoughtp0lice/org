@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       7fddee94-88ef-40bd-a0bb-fe043e4bfd80
+:ROAM_REFS: @nitinSpecTraEnhancingCode2024
+:END:
+#+title: SpecTra: Enhancing the Code Translation Ability of Language Models by Generating Multi-Modal Specifications - Nitin, Vikram and Krishna, Rahul and Ray, Baishakhi

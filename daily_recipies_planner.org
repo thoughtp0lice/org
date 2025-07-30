@@ -42,3 +42,15 @@ CLOSED: [2025-03-25 Tue 10:44]
 ** DONE Prep
 CLOSED: [2025-03-25 Tue 10:44]
 - [X] take minced beef out
+* Orange And Anaheim Chicken
+** TODO Ingredients [3/5]
+- [ ] 3 1/2 to 4 pounds bone-in chicken pieces
+- [X] 1 tsp salt
+- [X] black pepper
+- [X] 3 tbsp vegetable oil
+- [ ] 3/4 cup chopped onion
+- [ ] 2 fresh Anaheim chiles
+- [ ] 3 garlic cloves
+- [ ] 1/2 ground canela or cinnamon
+- [ ] 1/2 tsp dried oregano
+- [ ] 3 cups of orange juice
