@@ -11,10 +11,13 @@
 *** Terminaltrove :terminal:
 **** [[https://terminaltrove.com/totw.xml][Tool of the week]] :tool:
 **** [[https://terminaltrove.com/blog.xml][Terminal Trove Blog]] :tool:
-*** Programming :programming:
+*** Programming :programming-language:
 **** [[https://this-week-in-rust.org/rss.xml][This Week in Rust]] :rust:
-**** [[https://blog.codinghorror.com/rss][Coding Horror]] :opinion:
-**** [[https://ratfactor.com/atom.xml][ratfactor]] :opinion:blog:
+*** Blog :blog:
+**** [[https://blog.codinghorror.com/rss][Coding Horror]]
+**** [[https://ratfactor.com/atom.xml][ratfactor]]
+**** [[https://blog.parasrah.com/posts/index.xml][parasrah]]
+**** [[https://マリウス.com/][マリウス]]
 ** Comic :comic:
 *** [[https://xkcd.com/rss.xml][xkcd]]
 *** [[https://falseknees.com/rss.xml][False Knees]]
@@ -32,10 +35,9 @@
 **** [[https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=potd&feedformat=atom][wWikipedia Picture of the Day]]
 *** [[http://feeds.feedburner.com/enwp/DidYouKnow][Did you know]]
 ** News :news:
-*** Blogs :blog:us:
+*** Blogs :blog:
 **** [[https://foodandpower.substack.com/feed][Food and power]] :substack:market:
 **** [[https://heathercoxrichardson.substack.com/feed][Letters from an American]] :substack:politics:
-**** [[https://kyla.substack.com/feed][Kyla’s Newsletter]] :substack:economy:
 *** Magazine :magazine:
 **** [[https://www.newyorker.com/feed/rss][The New Yorker]]
 *** Newspaper :newspaper:

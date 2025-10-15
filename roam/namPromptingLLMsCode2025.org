@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       3ec5f91e-f178-4502-8b54-97e0ecbc5568
+:ROAM_REFS: @namPromptingLLMsCode2025
+:END:
+#+title: Prompting LLMs for Code Editing: Struggles and Remedies - Nam, Daye and Omran, Ahmed and Murillo, Ambar and Thakur, Saksham and Araujo, Abner and Blistein, Marcel and Frömmgen, Alexander and Hellendoorn, Vincent and Chandra, Satish
+
+[[id:94848a5e-b764-46a9-a79b-5043c4a30bc5][LLM4SE]] paper
+
+- Study of internal Google AI Tool
+  - Developers often prompt the LLM again after rejecting or accepting the code edit
+  - Developers do not like optimizing prompt after initial failure
+    - 7% of requests are repeat of previous prompt
+    - Edit of prompts are usually small edit
+- Code Edit Data
+  - Getting ground truth edit data by
+    1. Getting user submitted feedback
+    2. use code after 30 minutes
+- Common cause of code edit failure
+  - not being specific
+  - missing an operationalization plan
+  - faulty scope
+  - missing code base context or intent
+- Automatic User Prompt Enhancement
+  - Given original prompt, llm code edit, and code context
+  - Prompt LLM to fill missing information

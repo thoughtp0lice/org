@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       eee61027-0905-4e64-af6a-01ae61618c26
+:END:
+#+title: Rewrite vs Fix
+
+This is a [[id:a23bf13b-4d1d-44a6-8fa0-991370014ec5][Project Idea]] sometimes when LLM try to repair something they wrote tend to follow the bad decisions they made. Maybe they should decide when to rewrite vs repair

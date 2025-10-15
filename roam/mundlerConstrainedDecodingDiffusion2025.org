@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       31b18527-6c1d-44d4-a67a-38ae87edfd7a
+:END:
+#+title: Constrained Decoding of Diffusion LLMs with Context-Free Grammars - Mündler, Niels and Dekoninck, Jasper and Vechev, Martin
+
+- Not using a diffusion model
+- Given a string with holes
+- Each step add text to holes or remove holes
+- Reject any intermediate state that cannot satisfy by further expansion

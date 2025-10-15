@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       1682914e-fc81-45cd-ad30-b6c56c25e9e3
+:END:
+#+title: LLM Tool Using
+
+[[id:374d0242-6d95-4b4f-adaa-1f7211b39f59][LLM]] can call tools to get knowledge or ability itself doesn't have.

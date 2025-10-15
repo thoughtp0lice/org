@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       02c0e449-5658-496f-8529-66b8320aa0d6
+:ROAM_REFS: @chenImprovingLargeLanguage2024
+:END:
+#+title: Improving Large Language Models via Fine-grained Reinforcement Learning with Minimum Editing Constraint - Chen, Zhipeng and Zhou, Kun and Zhao, Wayne Xin and Wan, Junchen and Zhang, Fuzheng and Zhang, Di and Wen, Ji-Rong
+
+A work in [[id:9daa4bc9-099d-4101-a5b6-9233aaca7a95][RL LLM Finetune]]
+
+- Distill high power LLM to train a reward model to edit thought process
+- Use reward model probability to give token level reward
+- Use PPO to finetune LLM

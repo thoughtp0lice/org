@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       27279185-2be2-402b-a314-9e583cc0ff6c
+:END:
+#+title: Contrained LLM Generation
+
+- [[id:31b18527-6c1d-44d4-a67a-38ae87edfd7a][Constrained Decoding of Diffusion LLMs with Context-Free Grammars - Mündler, Niels and Dekoninck, Jasper and Vechev, Martin]] [cite:@mundlerConstrainedDecodingDiffusion2025]
+  - Use LLM to fill in blanks and reject each intermediate state that cannot be continued
+- [[id:004544cc-8e99-4ff8-b41b-05034f60a05a][SynCode: LLM Generation with Grammar Augmentation - Ugare, Shubham and Suresh, Tarun and Kang, Hangoo and Misailovic, Sasa and Singh, Gagandeep]] [cite:@ugareSynCodeLLMGeneration2024]
+  - Use a DFA (Deterministic Finite Automaton) to mask tokens
+- [[id:fe3d4b27-001e-4419-85a5-09c1929ef68d][Constrained Decoding for Fill-in-the-Middle Code Language Models via Efficient Left and Right Quotienting of Context-Sensitive Grammars - Melcer, Daniel and Fulton, Nathan and Gouda, Sanjay Krishna and Qian, Haifeng]] [cite:@melcerConstrainedDecodingFillintheMiddle2024]
+  - seem to use some variation of earely algorithm to do fill in the middle with LLM, to maintain the middle will satisfy the grammar?

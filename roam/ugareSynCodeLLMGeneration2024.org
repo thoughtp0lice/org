@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       004544cc-8e99-4ff8-b41b-05034f60a05a
+:ROAM_REFS: @ugareSynCodeLLMGeneration2024
+:END:
+#+title: SynCode: LLM Generation with Grammar Augmentation - Ugare, Shubham and Suresh, Tarun and Kang, Hangoo and Misailovic, Sasa and Singh, Gagandeep
+
+Pre-build a DFA to parse the partial generation and mask any token that does not follow the grammar.

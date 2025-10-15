@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       fe3d4b27-001e-4419-85a5-09c1929ef68d
+:ROAM_REFS: @melcerConstrainedDecodingFillintheMiddle2024
+:END:
+#+title: Constrained Decoding for Fill-in-the-Middle Code Language Models via Efficient Left and Right Quotienting of Context-Sensitive Grammars - Melcer, Daniel and Fulton, Nathan and Gouda, Sanjay Krishna and Qian, Haifeng
+#+filetags: :unread:
+
+- seem to use some variation of earely algorithm to do fill in the middle with LLM, to maintain the middle will satisify the grammar?

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       6e298286-7ff8-4d63-af48-fb8b15762c1c
+:ROAM_REFS: @chenSelfQuestioningLanguageModels2025
+:END:
+#+title: Self-Questioning Language Models - Chen, Lili and Prabhudesai, Mihir and Fragkiadaki, Katerina and Liu, Hao and Pathak, Deepak
+
+a propose propose difficult questions to ask a solver

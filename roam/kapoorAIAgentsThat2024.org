@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       4b046c4e-e67d-46a5-aa81-c9422720d608
+:ROAM_REFS: @kapoorAIAgentsThat2024
+:END:
+#+title: AI Agents That Matter - Kapoor, Sayash and Stroebl, Benedikt and Siegel, Zachary S. and Nadgir, Nitya and Narayanan, Arvind
+
+* Challenges of AI agent evaluation
+** AI agent evaluations must be cost-controlled
+- many agents evaluate the code and retry till the code works
+- many agents are not as good as simply retry and increase the temperature
+* Jointly optimizing accuracy and cost can yield better agent design
+* Model developers and downstream developers have distinct benchmarking needs
+- Model benchmark does not reflect actual downstream useage and concerns
+  - like cost or time, etc
+- should measure cost directly and not use a proxy like active parameters
+* Agent benchmarks allow shortcuts
+- Many does not have hidden test, which encourages overfit
+- Agent could overfit to the target benchmark
+- 4 levels of generality
+  1. *Distribution-specific*: benchmarks are limited to a specific task, such as U.S. grade school math problems, and do not account for distribution shifts.
+  2. *Task-specific*: Benchmarks are limited to a specific task such as booking a flight, placing an order on an e-commerce website, or solving a GitHub issue, and account for the possibility of distribution shifts, including drift.
+  3. *Domain-general benchmarks*: aim to measure the ability to perform any task in a specific domain, such as web browsing or tool use.
+  4. *General-purpose benchmarks*: measure the accuracy of agents across different domains, such as the same agent being able to perform web browsing and robotics tasks. It is unclear if such benchmarks are necessary or if aggregating domain-general benchmarks can better serve the purpose.
+- Recommend use of held-out tasks for target level of generality
+- Also recommend consider human in the loop
+* Inadequate benchmark standardization
+- Evaluation scripts make assumptions about agent design that aren’t satisfied by all agents.
+- Repurposing LLM evaluation benchmarks for agent evaluation introduces inconsistencies.
+  - Like add tests to HumanEval or remove questions without tests
+- The high cost of evaluating agents makes it is hard to estimate confidence intervals
+- Agent evaluation relies on external factors such as interacting with an environment which can lead to subtle errors
+  - Usage of tools like cli and web can lead to errors. Like reaching rate limit in some tasks which lead to other independent task failure.
+- The lack of standardized evaluation leads to subtle bugs in agent evaluation and development

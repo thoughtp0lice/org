@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       383118b6-a0a0-4a72-8a1c-069f4a6717f3
+:ROAM_REFS: @ziAgentPackDatasetCode2025
+:END:
+#+title: AgentPack: A Dataset of Code Changes, Co-Authored by Agents and Humans - Zi, Yangtian and Wu, Zixuan and Boruch-Gruszecki, Aleksander and Bell, Jonathan and Guha, Arjun
+
+
+A dataset of [[id:94848a5e-b764-46a9-a79b-5043c4a30bc5][LLM4SE]]
+Gather up millions of commit made by Claude Code, Codex, and Cursor to train LLM to edit.

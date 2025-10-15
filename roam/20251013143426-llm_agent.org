@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       9f7ecc43-37a0-47f1-81da-4a335566eca3
+:END:
+#+title: LLM Agent
+
+* What is a Agent
+- Definition from [cite:@kapoorAIAgentsThat2024]
+  - *Environment and goals*: the more complex the environment — e.g. range of tasks and domains, multi-stakeholder, long time horizon, unexpected changes — the more AI systems operating in that environment are agentic.
+  - *User interface and supervision*: AI systems that can be instructed in natural language and act autonomously on the user’s behalf are more agentic. In particular, systems that require less user supervision are more agentic.
+  - *System design*: Systems that use design patterns such as tool use (e.g., web search, programming) or planning (e.g., reflection, subgoal decomposition) are more agentic. Systems whose control flow is driven by an LLM, and hence dynamic, are more agentic [57, 5].
+* Argument against
+- [[id:6c36c85c-7a73-4059-8ec6-aeb92d036d93][Agentless: Demystifying LLM-based Software Engineering Agents - Xia, Chunqiu Steven and Deng, Yinlin and Dunn, Soren and Zhang, Lingming]] [cite:@xiaAgentlessDemystifyingLLMbased2024]
+  - Predefined process instead of asking AI to autonomously use tools
+- [[id:4b046c4e-e67d-46a5-aa81-c9422720d608][AI Agents That Matter - Kapoor, Sayash and Stroebl, Benedikt and Siegel, Zachary S. and Nadgir, Nitya and Narayanan, Arvind]] [cite:@kapoorAIAgentsThat2024]
+  - Critique on the current Agent Evaluation benchmarks

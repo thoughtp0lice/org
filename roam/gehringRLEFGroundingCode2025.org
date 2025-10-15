@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       5d134f26-dd42-4bd8-9fda-7edafff3c9e5
+:ROAM_REFS: @gehringRLEFGroundingCode2025
+:END:
+#+title: RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning - Gehring, Jonas and Zheng, Kunhao and Copet, Jade and Mella, Vegard and Carbonneaux, Quentin and Cohen, Taco and Synnaeve, Gabriel
+
+* Improve the efficiency of write and debug loop
+- write and debug may not be as efficient as just resample
+- see write and debug as a MDP
+- Use PPO to train LLM to be better at write and debug

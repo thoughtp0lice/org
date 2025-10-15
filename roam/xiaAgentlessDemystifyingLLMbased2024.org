@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       6c36c85c-7a73-4059-8ec6-aeb92d036d93
+:ROAM_REFS: @xiaAgentlessDemystifyingLLMbased2024
+:END:
+#+title: Agentless: Demystifying LLM-based Software Engineering Agents - Xia, Chunqiu Steven and Deng, Yinlin and Dunn, Soren and Zhang, Lingming
+
+Instead of letting LLM make decisions to use tools, make plans, etc. Have a predefined pipeline that
+1. localize suspicious files
+2. format files into skeleton with only necessary information
+3. Write patches to make repair
+4. Write tests. Then test and select patches

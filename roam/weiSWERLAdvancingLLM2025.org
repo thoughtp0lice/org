@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       ea4f8a84-287e-462c-8778-6210e42942d8
+:ROAM_REFS: @weiSWERLAdvancingLLM2025
+:END:
+#+title: SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution - Wei, Yuxiang and Duchenne, Olivier and Copet, Jade and Carbonneaux, Quentin and Zhang, Lingming and Fried, Daniel and Synnaeve, Gabriel and Singh, Rishabh and Wang, Sida I.
+
+- Use GRPO to train LLM to generate software patches
+  - Give -2 reward for breaking the format
+  - Use =difflib.SequenceMatcher= to compare generated vs ground truth to give reward
+- Seen that LLM learn to use various reasoning techniques

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       ac7dffbb-ed0a-40d0-a68c-cbf29c951fd7
+:ROAM_REFS: @schickToolformerLanguageModels2023
+:END:
+#+title: Toolformer: Language Models Can Teach Themselves to Use Tools - Schick, Timo and Dwivedi-Yu, Jane and Dessì, Roberto and Raileanu, Roberta and Lomeli, Maria and Zettlemoyer, Luke and Cancedda, Nicola and Scialom, Thomas
+
+Use [[id:374d0242-6d95-4b4f-adaa-1f7211b39f59][LLM]] to teach itself how to do [[id:1682914e-fc81-45cd-ad30-b6c56c25e9e3][LLM Tool Using]].
+
+* Mehtod
+1. Ask LLM to annotate data to add tool calling location
+2. Call the tools and add the result
+3. Filter out tools that don't improve the loss compare to no tool calling or no tool execution
+4. Finetune the model using the new data

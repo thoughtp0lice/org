@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       9daa4bc9-099d-4101-a5b6-9233aaca7a95
+:END:
+#+title: RL LLM Finetune
+
+* [[id:02c0e449-5658-496f-8529-66b8320aa0d6][Improving Large Language Models via Fine-grained Reinforcement Learning with Minimum Editing Constraint - Chen, Zhipeng and Zhou, Kun and Zhao, Wayne Xin and Wan, Junchen and Zhang, Fuzheng and Zhang, Di and Wen, Ji-Rong]] [cite:@chenImprovingLargeLanguage2024]
+- Stepwise reward by having a reward model to make smallest possible edit to fix the answer
+* [[id:5d134f26-dd42-4bd8-9fda-7edafff3c9e5][RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning - Gehring, Jonas and Zheng, Kunhao and Copet, Jade and Mella, Vegard and Carbonneaux, Quentin and Cohen, Taco and Synnaeve, Gabriel]] [cite:@gehringRLEFGroundingCode2025]
+- Treat LLM write and debug loop as a MDP and use RL to improve it's effciency
+* [[id:ea4f8a84-287e-462c-8778-6210e42942d8][SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution - Wei, Yuxiang and Duchenne, Olivier and Copet, Jade and Carbonneaux, Quentin and Zhang, Lingming and Fried, Daniel and Synnaeve, Gabriel and Singh, Rishabh and Wang, Sida I.]] [cite:@weiSWERLAdvancingLLM2025]
+- Use GRPO to train LLM to generate patches

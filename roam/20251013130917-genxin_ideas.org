@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       606a6722-528f-44fc-83f0-163a08db5994
+:END:
+#+title: Genxin Ideas
+
+Here's a set of ideas i have for gengxin
+
+* Use RL to finetune LLM to generate small edits
+- [[id:9daa4bc9-099d-4101-a5b6-9233aaca7a95][RL LLM Finetune]]
+- Use edit distance or overlap as reward
+
+* Constrained generation to make small edits
+- [[id:27279185-2be2-402b-a314-9e583cc0ff6c][Contrained LLM Generation]]
+* Fill-in-the-Middle [cite:@gongStructureAwareFillintheMiddlePretraining2025][cite:@bavarianEfficientTrainingLanguage2022][cite:@gongEvaluationLLMsSyntaxAware2024]
+
+* Generating Diff Directly
+- Known that diff may not not work as well as generating whole file: [[https://aider.chat/docs/benchmarks.html][Aider GPT Benchmark]]
+- Claude generate whole file instead of diff so context is easier to manage
+
+#  LocalWords:  gengxin
