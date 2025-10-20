@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       5ea252bc-597b-46b9-b50a-60fec0f666a9
+:ROAM_REFS: @bavarianEfficientTrainingLanguage2022
+:END:
+#+title: Efficient Training of Language Models to Fill in the Middle - Bavarian, Mohammad and Jun, Heewoo and Tezak, Nikolas and Schulman, John and McLeavey, Christine and Tworek, Jerry and Chen, Mark
+
+- Mainly prove that you can finetune a LLM to do FIM without making it unable to do normal generation
+- Also about how to efficiently do this finetune

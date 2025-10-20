@@ -3,6 +3,9 @@
 :END:
 #+title: RL LLM Finetune
 
+* Survey
+** [[id:7c974772-cf86-4453-9e66-7bfd889a114d][Reinforcement Learning Enhanced LLMs: A Survey - Wang, Shuhe and Zhang, Shengyu and Zhang, Jie and Hu, Runyi and Li, Xiaoya and Zhang, Tianwei and Li, Jiwei and Wu, Fei and Wang, Guoyin and Hovy, Eduard]] [cite:@wangReinforcementLearningEnhanced2025]
+
 * [[id:02c0e449-5658-496f-8529-66b8320aa0d6][Improving Large Language Models via Fine-grained Reinforcement Learning with Minimum Editing Constraint - Chen, Zhipeng and Zhou, Kun and Zhao, Wayne Xin and Wan, Junchen and Zhang, Fuzheng and Zhang, Di and Wen, Ji-Rong]] [cite:@chenImprovingLargeLanguage2024]
 - Stepwise reward by having a reward model to make smallest possible edit to fix the answer
 * [[id:5d134f26-dd42-4bd8-9fda-7edafff3c9e5][RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning - Gehring, Jonas and Zheng, Kunhao and Copet, Jade and Mella, Vegard and Carbonneaux, Quentin and Cohen, Taco and Synnaeve, Gabriel]] [cite:@gehringRLEFGroundingCode2025]

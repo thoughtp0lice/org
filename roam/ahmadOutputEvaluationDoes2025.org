@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       3d5c4b6f-7a2c-4e6b-920c-b9650847384e
+:ROAM_REFS: @ahmadOutputEvaluationDoes2025
+:END:
+#+title: From Output to Evaluation: Does Raw Instruction-Tuned Code LLMs Output Suffice for Fill-in-the-Middle Code Generation? - Ahmad, Wasi Uddin and Majumdar, Somshubra and Ginsburg, Boris
+
+Testing prompting LLM to do fill in the middle directly, and testing finetuning these LLM to see how well they work.

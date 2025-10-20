@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       97916056-f7c9-4a12-b3c5-0d66d7bf7a45
+:END:
+#+title: Fill In the Middle
+
+- [[id:12b703e4-e52e-479c-b70f-9f638edd3fff][Structure-Aware Fill-in-the-Middle Pretraining for Code - Gong, Linyuan and Cheung, Alvin and Elhoushi, Mostafa and Wang, Sida]][cite:@gongStructureAwareFillintheMiddlePretraining2025]
+  - Mask based on AST in FIM training
+- [[id:5ea252bc-597b-46b9-b50a-60fec0f666a9][Efficient Training of Language Models to Fill in the Middle - Bavarian, Mohammad and Jun, Heewoo and Tezak, Nikolas and Schulman, John and McLeavey, Christine and Tworek, Jerry and Chen, Mark]] [cite:@bavarianEfficientTrainingLanguage2022]
+  - Effect of FIM on LLM
+- [[id:3d5c4b6f-7a2c-4e6b-920c-b9650847384e][From Output to Evaluation: Does Raw Instruction-Tuned Code LLMs Output Suffice for Fill-in-the-Middle Code Generation? - Ahmad, Wasi Uddin and Majumdar, Somshubra and Ginsburg, Boris]][cite:@ahmadOutputEvaluationDoes2025]
+
+
+[cite:@nguyenMeetMiddleNew]
+[cite:@dingPlanningAwareCodeInfilling2025]
+[cite:@sunBridgingDeveloperInstructions2025]

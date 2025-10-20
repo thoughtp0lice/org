@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       606a6722-528f-44fc-83f0-163a08db5994
+:END:
+#+title: Gengxin Ideas
+
+Here's a set of ideas i have for gengxin
+
+* Use RL to finetune LLM to generate small edits
+- [[id:9daa4bc9-099d-4101-a5b6-9233aaca7a95][RL LLM Finetune]]
+- Use edit distance or overlap as reward
+
+* Constrained generation to make small edits
+- [[id:27279185-2be2-402b-a314-9e583cc0ff6c][Contrained LLM Generation]]
+** Related Fill-in-the-Middle
+[[id:12b703e4-e52e-479c-b70f-9f638edd3fff][Structure-Aware Fill-in-the-Middle Pretraining for Code - Gong, Linyuan and Cheung, Alvin and Elhoushi, Mostafa and Wang, Sida]][cite:@gongStructureAwareFillintheMiddlePretraining2025][cite:@bavarianEfficientTrainingLanguage2022][cite:@gongEvaluationLLMsSyntaxAware2024][cite:@ahmadOutputEvaluationDoes2025][cite:@sunBridgingDeveloperInstructions2025]
+
+* Generating Diff Directly
+- Known that diff may not not work as well as generating whole file: [[https://aider.chat/docs/benchmarks.html][Aider GPT Benchmark]]
+- Claude generate whole file instead of diff so context is easier to manage
+
+* Ideas
+- Use RL to train LLM edit code more conservatively
+- Train a model using github diffs, predict which token to remove given the task, then ask a LLM to fill in the blanks
+  - Can control the threshold of when to remove a token
+- Ask LLM to generate a diff file
+  - Have a threshold on the token probability of where the remove should start and when it should end.
+    - Consider only the top K tokens over probability over P, which one is furthest, or which one will remove the least
+    - Then during generation, check when the token for new tokens appear, if it cross over end the new tokens.
+#  LocalWords:  gengxin

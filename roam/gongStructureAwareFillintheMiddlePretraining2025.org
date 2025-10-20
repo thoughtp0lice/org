@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       12b703e4-e52e-479c-b70f-9f638edd3fff
+:ROAM_REFS: @gongStructureAwareFillintheMiddlePretraining2025
+:END:
+#+title: Structure-Aware Fill-in-the-Middle Pretraining for Code - Gong, Linyuan and Cheung, Alvin and Elhoushi, Mostafa and Wang, Sida
+
+- Use for fill in the middle pre-training
+- Instead of masking a random span, mask based on AST.
+  - Single-Node Masking.
+    - selects a single AST node to mask
+    - AST node with probability proportional to its size
+    - ignore nodes that represent keywords or punctuation
+  - Aligned Span Masking
+    1. Sample a character span with uniformly random endpoints [start, end]
+    2. Find the lowest AST subtree T that contains this character span.
+    3. Let T1 , T2 , . . . , Tn be the direct children of T , the subtree selected in the previous step. We now select a continuous sequence of these children, to form the middle part. We choose the sequence that has the largest character-level Intersection over Union (IoU) with the original random span [start, end].
