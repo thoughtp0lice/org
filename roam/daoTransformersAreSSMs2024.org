@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       6a06dd10-7dba-4dd8-80d1-f53a6be3eda5
+:ROAM_REFS: @daoTransformersAreSSMs2024
+:END:
+#+title: Transformers Are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality - Dao, Tri and Gu, Albert
+
+
+In basic [[id:93815e00-b821-4334-9788-89f96fbbd48a][Linear Attention Models]] the number of orthogonal key-value pairs they can store is bounded by the model’s dimensionality. When the sequence length exceeds this dimension, “memory collisions“ become inevitable, hindering exact retrieval.
+
+So it does S_{t} = \alpha_{t}S_{}_{t-1} + v_{t}k_{t}^{T} ,which uniformly decays all key-value associations at each time step by a dynamic ratio

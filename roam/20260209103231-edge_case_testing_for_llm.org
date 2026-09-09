@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       fa8e374b-e8ee-4a53-8aec-344c792c73dd
+:END:
+#+title: Edge Case Testing for LLM
+
+This is a [[id:a23bf13b-4d1d-44a6-8fa0-991370014ec5][Project Idea]]
+
+* Motivation
+In prompt, we can not specify all the behaviors LLM will implement. LLM will implement the average of what it sees in training or what developers tell it is good in DPO.
+** Example
+- null, "", " " sometimes are all considered "empty" depending in the specific cases, LLM will roll the dice and implement any one of them which may not be what people wanted.
+- claude love to use ~some_dict.get("some_key", default)~ to retrieve items to avoid exception, but sometime i want to know and stop the execution if key is not in dict
+
+* Approach
+We train an agent \(A\) to write tests for inputs where the LLM is unsure what to do, or where it may diverge from user intention. Users can inspect the tests, and if the output is not what they have in mind they can change the test and ask LLM to fix.
+** pipeline overview
+1. LLM takes in user prompt.
+2. LLM writes a implementation
+3. Agent writes tests that *LLM passes currently*, but the user might have different output in mind.
+4. User changes tests if tests shows different behavior than their intention.
+5. LLM fixes their code to pass all tests.
+** Self Divergence
+- We make a LLM write multiple versions of code for the same prompt, and use agent or automatic generation method to create inputs and setup where each version diverge. Pick one version for the final generation and test output.
+- Repeat till converge.
+** User-LLM Divergence
+- We train an agent to find inputs where LLM maybe sure about their implementation but the user may want other wise
+- In training time use "ground truth" as full user intention, find inputs where LLM and ground truth diverge even after self divergence. And write tests where LLM version passed and ground truth don't pass
+- The agent is then finetuned on this to generate tests based on given input.
+
+* Related
+- [[id:af7d223d-3ac6-4372-a7e4-4439bc420008][ClarifyGPT: Empowering LLM-based Code Generation with Intention Clarification - Mu, Fangwen and Shi, Lin and Wang, Song and Yu, Zhuohao and Zhang, Binquan and Wang, Chenxue and Liu, Shichao and Wang, Qing]]
+- [[id:93e4833e-f710-48e7-a687-3420ce5c8eae][Interactive Code Generation via Test-Driven User-Intent Formalization - Lahiri, Shuvendu K. and Fakhoury, Sarah and Naik, Aaditya and Sakkas, Georgios and Chakraborty, Saikat and Musuvathi, Madanlal and Choudhury, Piali and von Veh, Curtis and Inala, Jeevana Priya and Wang, Chenglong and Gao, Jianfeng]]
+- [[id:672b76de-c3a8-4465-98fc-a7294b59b4fc][Oracle-Guided Program Selection from Large Language Models - Fan, Zhiyu and Ruan, Haifeng and Mechtaev, Sergey and Roychoudhury, Abhik]]
+- [[id:709e5756-cef6-41ad-bdb0-da17aedc9a7d][Active Task Disambiguation with LLMs - Kobalczyk, Katarzyna and Astorga, Nicolas and Liu, Tennison and van der Schaar, Mihaela]]

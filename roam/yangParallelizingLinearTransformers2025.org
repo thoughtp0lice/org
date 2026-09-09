@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       b5ffcec8-3b6d-4352-a153-a1e30bdffcf5
+:ROAM_REFS: @yangParallelizingLinearTransformers2025
+:END:
+#+title: Parallelizing Linear Transformers with the Delta Rule over Sequence Length - Yang, Songlin and Wang, Bailin and Zhang, Yu and Shen, Yikang and Kim, Yoon
+
+Mamba2 [cite:@daoTransformersAreSSMs2024] does not account for the varying importance of different key-value associations, potentially leading to inefficient memory utilization. If the model needs to forget a specific key-value association, all key-value associations are equally forgotten, making the process less targeted and efficient.
+
+So here's a new [[id:93815e00-b821-4334-9788-89f96fbbd48a][Linear Attention Models]] architecture:
+
+1. retrieves the old value using the current key: v_{t}^{old} = S_{t-1} k_{t}
+2. It then obtains a new value v_{t}^{new}, by by
+interpolating between the old value and the current value v_{t}^{new} = \beta_{t} v_{t} + (1 - \beta_{t}) v_{t}^{old}
+3. save and replace with S_{t} = S_{t-1} - v_{t}^{old} k_{t}^{\top} + v_{t}^{new} k_{t}^{\top}
+In all it's S_{t} = S_{t-1}(I - \beta_{t}k_{t}k_{k}^{T}) + \beta_{t}v_{t}k_{}_{k}^{T}
+
+Also does something to make parallel training easy called *Chunkwise parallel form* don't know how that works tho.

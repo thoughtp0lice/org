@@ -12,3 +12,6 @@
 - Treat LLM write and debug loop as a MDP and use RL to improve it's effciency
 * [[id:ea4f8a84-287e-462c-8778-6210e42942d8][SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution - Wei, Yuxiang and Duchenne, Olivier and Copet, Jade and Carbonneaux, Quentin and Zhang, Lingming and Fried, Daniel and Synnaeve, Gabriel and Singh, Rishabh and Wang, Sida I.]] [cite:@weiSWERLAdvancingLLM2025]
 - Use GRPO to train LLM to generate patches
+* Methods
+** [[id:efc93f06-9952-450b-996f-b46157f34ab6][Checklists Are Better Than Reward Models For Aligning Language Models - Viswanathan, Vijay and Sun, Yanchao and Ma, Shuang and Kong, Xiang and Cao, Meng and Neubig, Graham and Wu, Tongshuang]] [cite:@viswanathanChecklistsAreBetter2025]
+** [[id:81fb37fa-d79e-4cd4-b577-003357b06ac1][PrefPalette: Personalized Preference Modeling with Latent Attributes - Li, Shuyue Stella and Sclar, Melanie and Lang, Hunter and Ni, Ansong and He, Jacqueline and Xu, Puxin and Cohen, Andrew and Park, Chan Young and Tsvetkov, Yulia and Celikyilmaz, Asli]] [cite:@liPrefPalettePersonalizedPreference2025]

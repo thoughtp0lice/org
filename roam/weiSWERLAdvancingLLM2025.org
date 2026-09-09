@@ -8,3 +8,13 @@
   - Give -2 reward for breaking the format
   - Use =difflib.SequenceMatcher= to compare generated vs ground truth to give reward
 - Seen that LLM learn to use various reasoning techniques
+- [[id:9daa4bc9-099d-4101-a5b6-9233aaca7a95][RL LLM Finetune]] with GRPO [cite:@shaoDeepSeekMathPushingLimits2024], no execution feedback needed
+* Data
+- GH Archive events + git clones, 4.6M repos, 24M PRs, 11M after filtering bots and lockfile changes
+- LLM adds relevant but unchanged files to the context, otherwise the model learns to edit every file it sees
+- whole files in the prompt so the model has to find the fault itself
+* Interesting results
+- Llama 3.3 70B gets 41% on Verified with Agentless Mini [cite:@xiaAgentlessDemystifyingLLMbased2024], 500 samples reranked by 30 repro tests
+- only trained on the repair step, still does file localization and test gen in the pipeline
+- RL improves HumanEval, CRUXEval, MATH, MMLU, SFT on the same seeds gets worse on them
+- doubt: reward is text similarity to one oracle patch, so a different correct fix gets punished

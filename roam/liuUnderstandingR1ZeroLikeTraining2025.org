@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       254e4c52-02f3-4fc0-9200-d9879cc3c7f2
+:ROAM_REFS: @liuUnderstandingR1ZeroLikeTraining2025
+:END:
+#+title: Understanding R1-Zero-Like Training: A Critical Perspective - Liu, Zichen and Chen, Changyu and Li, Wenjun and Qi, Penghui and Pang, Tianyu and Du, Chao and Lee, Wee Sun and Lin, Min
+#+STARTUP: latexpreview
+
+A work in [[id:9daa4bc9-099d-4101-a5b6-9233aaca7a95][RL LLM Finetune]]. Dr. GRPO is GRPO [cite:@shaoDeepSeekMathPushingLimits2024] with two normalization terms removed.
+* Two biases in GRPO
+GRPO objective
+\[
+\mathcal{J}_{\mathrm{GRPO}}(\theta) = \mathbb{E}\left[ \frac{1}{G} \sum_{i=1}^{G} \frac{1}{|o_i|} \sum_{t=1}^{|o_i|} \min\left( \frac{\pi_\theta(o_{i,t} \mid q, o_{i,<t})}{\pi_{\theta_{old}}(o_{i,t} \mid q, o_{i,<t})} \hat{A}_{i,t},\ \mathrm{clip}\left(\frac{\pi_\theta(o_{i,t} \mid q, o_{i,<t})}{\pi_{\theta_{old}}(o_{i,t} \mid q, o_{i,<t})}, 1 - \epsilon, 1 + \epsilon\right) \hat{A}_{i,t} \right) \right]
+\]
+\[
+\hat{A}_{i,t} = \frac{R(q, o_i) - \mathrm{mean}(\{R(q, o_1), \ldots, R(q, o_G)\})}{\mathrm{std}(\{R(q, o_1), \ldots, R(q, o_G)\})}
+\]
+- Response-level length bias :: the \(\frac{1}{|o_i|}\). Correct responses (positive advantage) get bigger updates when short, wrong responses (negative advantage) get penalized less when long. So the policy learns to write long wrong answers
+- Question-level difficulty bias :: the \(\mathrm{std}(R)\). Questions that are almost all right or all wrong have small std so they get upweighted. Batch-level advantage normalization is normal in RL but per-question it changes the weight of each question
+* Dr. GRPO
+Drop both terms, so the advantage is just the centered reward and the token sum is not divided by response length
+\[
+\hat{A}_{i,t} = R(q, o_i) - \mathrm{mean}(\{R(q, o_1), \ldots, R(q, o_G)\})
+\]
+and \(\frac{1}{|o_i|} \sum_{t=1}^{|o_i|}\) becomes \(\sum_{t=1}^{|o_i|}\). This is just PPO with a Monte Carlo return and an unbiased baseline. In code replace ~mask.sum(axis=dim)~ in the masked mean with a constant like ~MAX_TOKENS~.
+Most open source PPO implementations (OpenRLHF, trl, verl) have the length bias too since they all do a length normalized masked mean.
+* Related
+- The Dr. GRPO advantage is RLOO [cite:@koolBUY4REINFORCE2019] [cite:@ahmadianBackBasicsRevisiting2024] up to a factor of \(\frac{G}{G-1}\) that folds into the lr
+\[
+\frac{G}{G-1} \tilde{A}_{i,t} = R(q, o_i) - \frac{1}{G-1} \sum_{j \neq i} R(q, o_j) = \hat{A}^{\mathrm{RLOO}}_{i,t}
+\]
+- DAPO [cite:@yuDAPOOpenSourceLLM2025] fixes the same length bias with its token-level loss, \(\frac{1}{\sum_i |o_i|}\) instead of \(\frac{1}{G}\sum_i \frac{1}{|o_i|}\), but keeps the std
+- GSPO [cite:@zhengGroupSequencePolicy2025] keeps the std advantage too, goes after the token ratio instead
+- GiGPO [cite:@fengGroupinGroupPolicyOptimization2025] lets \(F_{\mathrm{norm}}\) be std or 1, so 1 is the Dr. GRPO / RLOO choice
+- VCPO [cite:@huangStableAsynchronyVarianceControlled2026] OPOB baseline reduces to the group mean when on-policy and \(\|g_i\|\) is constant, so it is the same centered reward with no std

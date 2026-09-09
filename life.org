@@ -1,9 +1,5 @@
 #+title: My life schedule
 
-* Reading
-* Events
-* Appointments
-** TODO Schedule appointment with dentist
-** TODO Move out CD money <2025-06-13 Fri>
-** TODO Driver license renewal <2025-06-20 Thu>
-Location: 13730 Research Blvd Austin
+* TODO call dentist to reschedule <2025-11-14 Fri>
+* TODO schedule a HRT appointment
+* TODO schedule a driver's license appointment

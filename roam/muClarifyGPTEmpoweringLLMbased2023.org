@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       af7d223d-3ac6-4372-a7e4-4439bc420008
+:ROAM_REFS: @muClarifyGPTEmpoweringLLMbased2023
+:END:
+#+title: ClarifyGPT: Empowering LLM-based Code Generation with Intention Clarification - Mu, Fangwen and Shi, Lin and Wang, Song and Yu, Zhuohao and Zhang, Binquan and Wang, Chenxue and Liu, Shichao and Wang, Qing
+
+Automatically generate inputs to cluster llm generated code based on output, then give user a question in natural language to clarify the desired output.

@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f4ce11e7-304c-40a2-97ae-09277910ea37
+:ROAM_REFS: @chiCopilotArenaPlatform2025
+:END:
+#+title: Copilot Arena: A Platform for Code LLM Evaluation in the Wild - Chi, Wayne and Chen, Valerie and Angelopoulos, Anastasios Nikolas and Chiang, Wei-Lin and Mittal, Aditya and Jain, Naman and Zhang, Tianjun and Stoica, Ion and Donahue, Chris and Talwalkar, Ameet
+

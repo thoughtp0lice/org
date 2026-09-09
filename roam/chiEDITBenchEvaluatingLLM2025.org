@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       7089dbd7-33ff-456f-b515-e91205bb6e9c
+:ROAM_REFS: @chiEDITBenchEvaluatingLLM2025
+:END:
+#+title: EDIT-Bench: Evaluating LLM Abilities to Perform Real-World Instructed Code Edits - Chi, Wayne and Chen, Valerie and Shar, Ryan and Mittal, Aditya and Liang, Jenny and Chiang, Wei-Lin and Angelopoulos, Anastasios Nikolas and Stoica, Ion and Neubig, Graham and Talwalkar, Ameet and Donahue, Chris
+
+* Motivation
+- Code generation benchmark
+  - Generating from scratch
+  - Task does not reflect real life tasks
+- "Arena-style" evaluation requires human votes to rank a new model
+* Method
+- An open-source VSCode extension, same as [[id:f4ce11e7-304c-40a2-97ae-09277910ea37][Copilot Arena: A Platform for Code LLM Evaluation in the Wild - Chi, Wayne and Chen, Valerie and Angelopoulos, Anastasios Nikolas and Chiang, Wei-Lin and Mittal, Aditya and Jain, Naman and Zhang, Tianjun and Stoica, Ion and Donahue, Chris and Talwalkar, Ameet]] [cite:@chiCopilotArenaPlatform2025]
+  - User highlight a snippet of code, send to tool with a comment
+  - Tool send 2 candidates back
+  - User compare the candidates
+- Problem Curation
+  - Start with 2672 responses (user accepted)
+  - Only python and javascript code (~1700)
+  - Remove repeat questions
+  - Remove trivial questions(~470)
+  - Remove question that is infeasible to test for (~109)
+- Test Harness Creation
+  - Annotators write the test harness, given examples with GPT-4o AND Sonnet 3.7
+  - Remove ones that is too vague to test
+  - Use agent to setup tests, not writing tests
+* Bench Info
+- Real user instructions are diverse and messy
+  - Real user are more informal or under specified
+  - Real user use different languages
+- Real-world code contexts span many applications and context lengths
+- Clusters of functional edits
+  - feature addition, feature modification, bug fixing, and optimization.
+- Lots of the library is data science related compare to realife:
+  1. boto3: Amazon Web Services (AWS) SDK for Python
+  2. urllib3: http client
+  3. typing-extensions
+  4. certifi: dealing with SSL
+* Eval
+- Given code and ask to edit the entire file
+  - Given which section to rewrite and section before and after
+- Closed source better
+- Each model better at different tasks
+- Sonnet-4 > Sonnet-4.5 and gpt-oss-20b > gpt-oss-120b?
+- Result different from other benchmark. 

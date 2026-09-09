@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       93815e00-b821-4334-9788-89f96fbbd48a
+:END:
+#+title: Linear Attention Models
+
+A very neat idea where instead of using softmax to combine the values in attention, we can just combine them linearly and use a single matrix as the kv cache
+
+- At it's simplest for it's \[S_{t} = S_{}_{t-1} + v_{t}k_{t}^{T}\]
+- Mamba2[cite:@daoTransformersAreSSMs2024] does \[S_{t} = \alpha_{t}S_{}_{t-1} + v_{t}k_{t}^{T}\]
+- DeltaNet[cite:@yangParallelizingLinearTransformers2025] does S_{t} = S_{t-1}(I - \beta_{t}k_{t}k_{k}^{T}) + \beta_{t}v_{t}k_{}_{k}^{T}
+- Gated Delta Net[cite:@yangGatedDeltaNetworks2025] does S_{t} = S_{t-1}(\alpha_{t}_{}(I - \beta_{t}k_{t}k_{k}^{T})) + \beta_{t}v_{t}k_{}_{k}^{T}
+- GDN with Negative Eigenvalues[cite:@grazziUnlockingStateTrackingLinear2024] does S_{t} = S_{t-1}(\alpha_{t}_{}(I - 2\beta_{t}k_{t}k_{k}^{T})) + \beta_{t}v_{t}k_{}_{k}^{T}

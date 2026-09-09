@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       5721f2c0-8d5e-4957-9364-8620f099a5a9
+:ROAM_REFS: @vijayvargiyaAmbigSWEInteractiveAgents2026
+:END:
+#+title: Ambig-SWE: Interactive Agents to Overcome Underspecificity in Software Engineering - Vijayvargiya, Sanidhya and Zhou, Xuhui and Yerukola, Akhila and Sap, Maarten and Neubig, Graham
+
+- Use LLM to make SWE-Bench Verified ambiguous
+  - imperfect since real life ambiguous messages have error message, links, etc
+- 3 options, hidden (with ambiguous task summary), interaction (allowed to ask gpt who have the full info questions), full (full task)
+- interestingly, small models ask a lot about where files are (all models do this), and all models get a boost when nav info is given
+  - except Qwen 3 Coder, gets the file path then re-explores anyway and does worse
+* Interesting results
+- interaction recovers up to 89% of Full (Sonnet 4), Llama/Deepseek only ~55%
+- no model asks unless prompted, and even prompted they can't tell full from ambiguous issues
+  - Qwen 3 Coder never asks at all, 100% FNR
+  - Llama asks arbitrarily on everything
+- Claude explores the repo first then asks only what it can't find, Deepseek/Qwen ask right away
+- Deepseek asks implementation questions the user can't answer
+- number of questions doesn't predict resolve rate, integrating the answer matters more
+* Related
+- [[id:9f7ecc43-37a0-47f1-81da-4a335566eca3][LLM Agent]] eval on top of SWE-bench [cite:@jimenezSWEbenchCanLanguage2024], run in OpenHands
+- ClarifyGPT [cite:@muClarifyGPTEmpoweringLLMbased2023] and test-driven clarification [cite:@lahiriInteractiveCodeGeneration2023] handle ambiguity, this is missing info

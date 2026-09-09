@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       43b073f5-894c-4f6a-8f46-68b7b805fb5a
+:ROAM_REFS: @yuDAPOOpenSourceLLM2025
+:END:
+#+title: DAPO: An Open-Source LLM Reinforcement Learning System at Scale - Yu, Qiying and Zhang, Zheng and Zhu, Ruofei and Yuan, Yufeng and Zuo, Xiaochen and Yue, Yu and Dai, Weinan and Fan, Tiantian and Liu, Gaohong and Liu, Lingjun and Liu, Xin and Lin, Haibin and Lin, Zhiqi and Ma, Bole and Sheng, Guangming and Tong, Yuxuan and Zhang, Chi and Zhang, Mofan and Zhang, Wang and Zhu, Hang and Zhu, Jinhua and Chen, Jiaze and Chen, Jiangjie and Wang, Chengyi and Yu, Hongli and Song, Yuxuan and Wei, Xiangpeng and Zhou, Hao and Liu, Jingjing and Ma, Wei-Ying and Zhang, Ya-Qin and Yan, Lin and Qiao, Mu and Wu, Yonghui and Wang, Mingxuan
+#+STARTUP: latexpreview
+
+Another improvement on GRPO [cite:@shaoDeepSeekMathPushingLimits2024]
+
+* DAPO
+** Main improvements
+- Clip-Higher :: which promotes the diversity of the system and avoids entropy collapse
+- Dynamic Sampling :: which improves training efficiency and stability
+- Token-Level Policy Gradient Loss :: which is critical in long-CoT RL scenarios;
+- Overlong Reward Shaping :: which reduces reward noise and stabilizes training.
+** Objective
+- GRPO minus the KL term, reasoning models drift far from \pi_{ref} anyway. Reward is rule based, 1 if the answer matches else -1
+  \(J_{DAPO}(\theta) = \mathbb{E}_{(q,a) \sim D,\ \{o_{i}\}_{i=1}^{G} \sim \pi_{\theta_{old}}(\cdot \mid q)}\left[\frac{1}{\sum_{i=1}^{G}|o_{i}|}\sum_{i=1}^{G}\sum_{t=1}^{|o_{i}|}\min\left(r_{i,t}(\theta)\hat{A}_{i,t},\ \mathrm{clip}(r_{i,t}(\theta), 1-\epsilon_{low}, 1+\epsilon_{high})\hat{A}_{i,t}\right)\right]\)
+  \(\text{s.t.}\ 0 < |\{o_{i} \mid \mathrm{is\_equivalent}(a, o_{i})\}| < G\)
+  \(r_{i,t}(\theta) = \frac{\pi_{\theta}(o_{i,t} \mid q, o_{i,<t})}{\pi_{\theta_{old}}(o_{i,t} \mid q, o_{i,<t})}, \quad \hat{A}_{i,t} = \frac{R_{i} - \mathrm{mean}(\{R_{i}\}_{i=1}^{G})}{\mathrm{std}(\{R_{i}\}_{i=1}^{G})}\)
+- Clip-Higher ::  Normal clip, with one \epsilon a 0.01 token can only reach 0.012 while a 0.9 token can reach 1.08, so the upper clip kills exploration
+- Dynamic Sampling :: The s.t. line, keep sampling until the batch has no all-correct or all-wrong group which could lead to zero policy gradients, shrinking the magnitude and increasing the noise sensitivity of the batch gradient.
+- *Token-level loss* is the \(1 / \sum_{i}|o_{i}|\) in front instead of GRPO's \(\frac{1}{G}\sum_{i}\frac{1}{|o_{i}|}\). Long responses aren't down weighted, so gibberish in them gets penalized
+- *Overlong reward shaping* adds a soft length penalty to the correctness reward. They find that if remove the loss of truncated samples, training is much more stable. So instead of a single penalty to overlong, do a soft overlong to stabilize, a sound reasoning won't suddenly be penalized because a few token over
+  \(R_{length}(y) = \begin{cases} 0 & |y| \le L_{max} - L_{cache} \\ \frac{(L_{max} - L_{cache}) - |y|}{L_{cache}} & L_{max} - L_{cache} < |y| \le L_{max} \\ -1 & L_{max} < |y| \end{cases}\)
+** Related
+- Drops the KL term that RLHF [cite:@ouyangTrainingLanguageModels2022] needs, reasoning RL is meant to drift from \pi_{ref}
+- Rule-based reward as in code RL, RLEF [cite:@gehringRLEFGroundingCode2025], CodeRL [cite:@leCodeRLMasteringCode2022], Reflexion [cite:@shinnReflexionLanguageAgents2023]
+- GSPO [cite:@zhengGroupSequencePolicy2025] keeps the token-level loss but argues the token ratio r_{i,t} itself is the problem
+- Modified DAPO trains multi-turn SWE agents in [cite:@golubevTrainingLongContextMultiTurn2025]

@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       5ac3ed63-2a4a-48ff-bbdf-c121d37d40c5
+:ROAM_REFS: @sutawikaCodeScoutEffectiveRecipe2026
+:END:
+#+title: CodeScout: An Effective Recipe for Reinforcement Learning of Code Search Agents - Sutawika, Lintang and Soni, Aditya Bharat and R, Bharath Sriraam R and Gandhi, Apurva and Yassine, Taha and Vijayvargiya, Sanidhya and Li, Yuchen and Zhou, Xuhui and Zhang, Yilin and Maben, Leander Melroy and Neubig, Graham
+
+RL training agents to localize changes with just simple bash tools. Maybe relevant to CodeRAG [cite:@zhangCodeRAGFindingRelevant2025]
+
+* CodeScout
+** Motivation
+- current agent code search involved significant modifications to the agent itself to incorporate static analysis
+- Maybe RL with simple tools can suffice
+analysis of the codebase,
+** Method
+- Data :: for each task, have \(F*, M*, U*\), or files, modules, and functions. Took from prior similar work like swe bench variants.
+- OpenHands-Bash :: unix commands like rg (ripgrep), find, ls, grep, sed.
+- Reward :: F1 score on files, modules, and functions, then an turn reward if the agents terminates in k turns, k = step limit, to make sure it finishes within limit.
+- Training ::  GSPO

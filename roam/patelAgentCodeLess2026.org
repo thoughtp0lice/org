@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       8701be19-e31e-4154-9666-ee4cb889da07
+:ROAM_REFS: @patelAgentCodeLess2026
+:END:
+#+title: Is Agent Code Less Maintainable Than Human Code? - Patel, Shaswat and Hou, Betty Li and Purohit, Arun and Xu, Kai and Pan, Jane and He, He and Chen, Valerie
+
+* CodeFlow
+Topic of whether code generate slop (hard to maintain code)
+
+- **PR 0**: function changed removed
+- **PR 1**: function implemented with LLM
+- **RP 2**: function edited by LLM
+
+Then compare LLM function vs human function edit success rate
+** Related
+- Slopbench[cite:@orlanskiSlopCodeBenchBenchmarkingHow2025]
+- SWE-Bench-CL[cite:@joshiSWEBenchCLContinualLearning2025]
+- CodeFlowBench[cite:@wangCodeFlowBenchMultiturnIterative2026]
+** Data
+Use data directly from swe-bench verified[cite:@SWEbenchVerified], swe-bench multiligual[cite:@SWEbenchMultilingualKabir2025], swe-bench pro [cite:@dengSWEBenchProCan2025], FeatBench[cite:@chenFeatBenchEvaluatingCoding2025].
+
+** Cause of the drift
+Use logical regression to predict human only wins or machine only wins (on the subset where the outcome is different) and see their coefficient
+- logical line of code on PR2, or over editing
+- input/error contract: differences in exception types or swapped defaults in re-implementation
+- difficult of the task, based on the success of the other 3 models on the same instance. On easier tasks HA wins.

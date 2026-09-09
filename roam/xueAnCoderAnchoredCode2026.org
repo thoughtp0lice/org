@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       008c5abb-8559-46fa-b1e3-c5202e5589e5
+:ROAM_REFS: @xueAnCoderAnchoredCode2026
+:END:
+#+title: AnCoder: Anchored Code Generation via Discrete Diffusion Models - Xue, Anton and Rout, Litu and Caramanis, Constantine and Shakkottai, Sanjay
+

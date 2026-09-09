@@ -7,3 +7,4 @@
 - Given a string with holes
 - Each step add text to holes or remove holes
 - Reject any intermediate state that cannot satisfy by further expansion
+

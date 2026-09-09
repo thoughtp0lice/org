@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       39954d70-35d1-42f5-b3c6-a67607c1889f
+:ROAM_REFS: @grazziUnlockingStateTrackingLinear2024
+:END:
+#+title: Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues - Grazzi, Riccardo and Siems, Julien and Zela, Arber and Franke, Jörg K. H. and Hutter, Frank and Pontil, Massimiliano
+
+Normal GDN [cite:@yangGatedDeltaNetworks2025] does S_{t} = S_{t-1}(\alpha_{t}_{}(I - \beta_{t}k_{t}k_{k}^{T})) + \beta_{t}v_{t}k_{}_{k}^{T}, the transition matrix in this [[id:93815e00-b821-4334-9788-89f96fbbd48a][Linear Attention Models]] is \alpha_{t}_{}(I - \beta_{t}k_{t}k_{k}^{T}) which have a positive eigenvalue.
+
+Thus we can do S_{t} = S_{t-1}(\alpha_{t}_{}(I - \beta_{t}k_{t}k_{k}^{T})) + \beta_{t}v_{t}k_{}_{k}^{T} which allows negative eigenvalues and improve the expressiveness of the model.

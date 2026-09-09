@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       c85f2ae3-6526-4992-87d3-0b7242066761
+:ROAM_REFS: @zhangCodeRAGFindingRelevant2025
+:END:
+#+title: CodeRAG: Finding Relevant and Necessary Knowledge for Retrieval-Augmented Repository-Level Code Completion - Zhang, Sheng and Ding, Yifan and Lian, Shuquan and Song, Shun and Li, Hui
+
+Repo-level completion RAG, fixes three things in RepoCoder [cite:@zhangRepoCoderRepositoryLevelCode2023] style pipelines: query is last k lines, one retrieval path, retriever not aligned with the code LLM.
+* CodeRaG
+** Method
+1. Knowledge base from AST, four item types
+   - functions, global vars, class funcs, class vars
+2. Query by /log probability guided probing/
+   - log probability to find the fine-grained code chunks that are most important to constructing code retrieval query.
+   - split current file into 3-line chunks, glue each onto the target chunk, generate 3 tokens with CodeT5p-220m
+   - sum of log probs = chunk relevance, top-1 chunk + target chunk is the query
+3. Multi-path retrieval, 15 each from TF-IDF and dense, plus dataflow-guided
+4. /BestFit/ reranking
+   - small models does not follow list-wise ranking prompt, and list wise is computationally expensive
+   - listwise prompting fails on small LLMs, so ask Qwen3-8B "which one snippet helps most" per window of 3
+   - heap sort with the LLM as comparator to get top-10
+   - distill into Qwen3-0.6B, keep training samples only where the 8B picks the same one in 4 of 5 tries

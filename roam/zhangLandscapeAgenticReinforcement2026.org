@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bfdd8801-36f6-4422-98e8-696a1307ef08
+:ROAM_REFS: @zhangLandscapeAgenticReinforcement2026
+:END:
+#+title: The Landscape of Agentic Reinforcement Learning for LLMs: A Survey - Zhang, Guibin and Geng, Hejia and Yu, Xiaohang and Yin, Zhenfei and Zhang, Zaibin and Tan, Zelin and Zhou, Heng and Li, Zhongzhi and Xue, Xiangyuan and Li, Yijiang and Zhou, Yifan and Chen, Yang and Zhang, Chen and Fan, Yutao and Wang, Zihu and Huang, Songtao and Piedrahita-Velez, Francisco and Liao, Yue and Wang, Hongru and Yang, Mengyue and Ji, Heng and Wang, Jun and Yan, Shuicheng and Torr, Philip and Bai, Lei
+

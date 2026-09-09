@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       cb43d6c2-87ce-45fb-a7b0-8bb7b6ff665c
+:ROAM_REFS: @thimmaiahPLSemanticsBenchLargeLanguage2025
+:END:
+#+title: PLSemanticsBench: Large Language Models As Programming Language Interpreters - Thimmaiah, Aditya and Zhang, Jiyang and Srinivasa, Jayanth and Li, Junyi Jessy and Gligoric, Milos
+
+This is a [[id:94848a5e-b764-46a9-a79b-5043c4a30bc5][LLM4SE]] paper

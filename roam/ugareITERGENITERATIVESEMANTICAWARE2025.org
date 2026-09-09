@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       43f71141-6cf1-4ca4-b8bf-248b266b6c3d
+:ROAM_REFS: @ugareITERGENITERATIVESEMANTICAWARE2025
+:END:
+#+title: ITERGEN: ITERATIVE SEMANTIC-AWARE STRUCTURED LLM GENERATION WITH BACKTRACKING - Ugare, Shubham and Gumaste, Rohan and Suresh, Tarun and Singh, Gagandeep and Misailovic, Sasa
+
+This is a work in [[id:27279185-2be2-402b-a314-9e583cc0ff6c][Contrained LLM Generation]]
+
+- Core is 3 functions
+  - ~forward~: generate until the number of new specified stop symbols in the generation reaches the specified count. Stop symbol from the grammar can be either terminal or non-terminal
+  - ~backward~: backtrack the generation process by the given number of specified symbols
+  - ~view~: used to inspect all parts of the partial generation that correspond to a given grammar symbol for checking whether the output meets certain criteria.
+- With this 3 functions we can implement a generation algorithm like this
+  1. generate till k symbols are generated
+  2. check generated symbols
+  3. backtrack if generated symbols does not satisfy specifications

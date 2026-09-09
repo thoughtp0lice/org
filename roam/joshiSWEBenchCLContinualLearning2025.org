@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       c548363f-0b20-4071-b96f-a0190b0929db
+:ROAM_REFS: @joshiSWEBenchCLContinualLearning2025
+:END:
+#+title: SWE-Bench-CL: Continual Learning for Coding Agents - Joshi, Thomas and Chowdhury, Shayan and Uysal, Fatih
+#+STARTUP: latexpreview
+
+Somewhat related to SlopCodeBench [cite:@orlanskiSlopCodeBenchBenchmarkingHow2025]
+
+- Tasks to simulate continue learning of real development.
+- Does not limit to one tasks, but a whole trajectory across time in a repo
+- Want to test the following:
+  - Accumulate knowledge from previously solved issues.
+  - Transfer learned patterns or solutions to new, related problems (forward transfer).
+  - Retain proficiency on older tasks after learning new ones (resist catastrophic forgetting).
+  - Adapt its problem-solving strategies or tool usage as it gains experience with a codebase.
+* Trends and papers
+Not really a survey, related work is 3 paragraphs, but the whole paper is stitched from these threads
+- *Static benchmark to task stream*. HumanEval [cite:@chenEvaluatingLargeLanguage2021], MBPP [cite:@austinProgramSynthesisLarge2021], SWE-Bench [cite:@jimenezSWEbenchCanLanguage2024] and Verified all score isolated tasks with pass@k / BLEU / EM. Their move is ordering Verified issues by time per repo, 8 repos, 273 tasks
+- *CL metrics ported from vision CL*. ACC, forgetting, forward and backward transfer are the standard vision continual learning ones. Their addition is CL-F1, harmonic mean of plasticity \(\frac{1}{N}\sum_i a_{i,i}\) and stability \(1 - F\), plus a weighted CL-Score with tunable \(\lambda\)
+- *RAG memory as the continual learning mechanism*. No weight updates, "learning" is a FAISS index of past attempts prepended to the prompt [cite:@lewisRetrievalAugmentedGenerationKnowledgeIntensive2021]. Prompt poisoning experiment shows unrelated past tasks drift the output, and failed attempts in memory make garbage in garbage out. Patches have low overlap (Jaccard 0.11) so retrieval has to be semantic not structural
+- *Tool-using agent scaffolds*. SWE-agent ACI [cite:@yangSWEagentAgentComputerInterfaces2024] with ReAct [cite:@yaoReActSynergizingReasoning2023] loop rebuilt in LangGraph. The static patch-only SWE-Bench harness broke on their derived dataset, pass rates under 8.5% with CodeLlama [cite:@roziereCodeLlamaOpen2023] and other small models, which is why they built the agent
+- *Curriculum ordering*. Timestamp first then human fix time buckets. Also pitch the sequence as a fine-tuning curriculum, complementary to the RAG memory, but no experiments
+No actual CL results yet, section 8 is "proposed experiments"

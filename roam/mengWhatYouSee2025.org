@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       df93bc57-914a-43dc-a244-7733b13991ef
+:ROAM_REFS: @mengWhatYouSee2025
+:END:
+#+title: What You See Is What It Does: A Structural Pattern for Legible Software - Meng, Eagon and Jackson, Daniel
+
+* Motivation
+- software is illegible
+- software is insufficiently modular
+* Method
+- *Concepts*
+  - user-facing unit of functionality a well defined purpose and thus deliver some recognizable value.
+  - State machine that is completely independent
+- *Synchronizations*
+  - An application layer that makes calls to concept actions and queries concept states in response to incoming requests.
+  - Synchronize states in each concept
+

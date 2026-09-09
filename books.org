@@ -1,0 +1,20 @@
+#+title: Books
+* 2026 [1/5]
+** DONE The Forever War
+CLOSED: [2026-01-03 Sat 15:22]
+- Joe Haldeman
+- 1974
+** STRT The Obelisk Gate
+- N. K. Jemisin
+- 2016
+** STRT True Grit
+- Charles Portis
+- 1968
+- Audio Book
+** TODO Jane Eyre
+- Charlotte Brontë
+- 1847
+** TODO Dune
+- Frank Herbert
+- 1965
+- Audio Book

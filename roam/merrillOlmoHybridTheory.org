@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5f9f545c-0a24-420a-82d3-4c869a9d871c
+:ROAM_REFS: @merrillOlmoHybridTheory
+:END:
+#+title: Olmo Hybrid: From Theory to Practice and Back - Merrill, William and Li, Yanhong and Romero, Tyler and Svete, Anej and Costello, Caia and Dasigi, Pradeep and Groeneveld, Dirk and Heineman, David and Kuehl, Bailey and Lambert, Nathan and Li, Chuan and Lo, Kyle and Malik, Saumya and Matusz, \relax DJ and Minixhofer, Benjamin and Morrison, Jacob and Soldaini, Luca and Timbers, Finbarr and Walsh, Pete and Smith, Noah A and Hajishirzi, Hannaneh and Sabharwal, Ashish
+

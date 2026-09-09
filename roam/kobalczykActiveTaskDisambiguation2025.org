@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       709e5756-cef6-41ad-bdb0-da17aedc9a7d
+:ROAM_REFS: @kobalczykActiveTaskDisambiguation2025
+:END:
+#+title: Active Task Disambiguation with LLMs - Kobalczyk, Katarzyna and Astorga, Nicolas and Liu, Tennison and van der Schaar, Mihaela
+
+1. Get a set of solutions
+2. Get a set of questions to ask human
+3. Get an answer to each question for each solution
+4. find the utility of the question based on the answer
+   - The best question should have answers that separate the solution space equally
+   - Maximize the entropy
+5. Give the question to user

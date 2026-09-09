@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       81fb37fa-d79e-4cd4-b577-003357b06ac1
+:ROAM_REFS: @liPrefPalettePersonalizedPreference2025
+:END:
+#+title: PrefPalette: Personalized Preference Modeling with Latent Attributes - Li, Shuyue Stella and Sclar, Melanie and Lang, Hunter and Ni, Ansong and He, Jacqueline and Xu, Puxin and Cohen, Andrew and Park, Chan Young and Tsvetkov, Yulia and Celikyilmaz, Asli
+
+* Method
+- Synthesis a set of responses that only varies on one dimension (attribute).
+- Use contrastive learning to learn a feature on that attribute
+- Preference model takes instruction x, response y, and all the latent attribute features
+  - The final hidden state of last token is integrated using attention with all the attribute predictor hidden states.
+
+#  LocalWords:  contrastive

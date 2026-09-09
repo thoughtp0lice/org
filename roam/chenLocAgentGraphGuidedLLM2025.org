@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       9705f726-f5b8-454d-b1a8-326d0c69d2b8
+:ROAM_REFS: @chenLocAgentGraphGuidedLLM2025
+:END:
+#+title: LocAgent: Graph-Guided LLM Agents for Code Localization - Chen, Zhaoling and Tang, Xiangru and Deng, Gangda and Wu, Fang and Wu, Jialong and Jiang, Zhiwei and Prasanna, Viktor and Cohan, Arman and Wang, Xingyao
+
+Build a graph database of code files for agent to search through.
+Related to CodeScout [cite:@sutawikaCodeScoutEffectiveRecipe2026] OneTool [cite:@zhangOneToolEnough2026]

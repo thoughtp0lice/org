@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       300232fc-04c6-4bae-b412-d92e01ead2d5
+:ROAM_REFS: @kimTrainingLargeLanguage2026
+:END:
+#+title: On Training Large Language Models for Long-Horizon Tasks: An Empirical Study of Horizon Length - Kim, Sunghwan and Cho, Junhee and Kwak, Beong-woo and Kwon, Taeyoon and Wang, Liang and Yang, Nan and Zhang, Xingxing and Wei, Furu and Yeo, Jinyoung
+
+Sort of reinvented HRL and skills for LLM

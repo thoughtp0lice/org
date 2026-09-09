@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       751b6e43-cb86-4324-b0fe-06601040462e
+:ROAM_REFS: @harryFixedPsychologicalPersonas2026
+:END:
+#+title: Beyond Fixed Psychological Personas: State Beats Trait, but Language Models Are State-Blind - Harry, Tamunotonye and Ngong, Ivoline C. and Nweke, Chima and Feng, Yuanyuan and Near, Joseph
+
+- The state of person making the comment can dominate the variance in messages compared to stable personality trait.
+- However, LLM can be state blind and their respnose does not distinguish the personas
+- And reward model are inconsistent when it comes to state

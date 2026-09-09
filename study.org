@@ -1,3 +1,4 @@
 #+title: My work schedule
 
-* Meet with Milos and Jessy's past student <2025-05-06 Tue>
+* DONE email Jierui about presenting [[https://arxiv.org/abs/2511.04486][Edit-Bench]] <2025-11-10 Mon>
+CLOSED: [2025-11-10 Mon 11:29]

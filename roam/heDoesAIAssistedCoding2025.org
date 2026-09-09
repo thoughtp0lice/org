@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       0cf4b177-380d-46a3-be3d-eadffd95172b
+:ROAM_REFS: @heDoesAIAssistedCoding2025
+:END:
+#+title: Does AI-Assisted Coding Deliver? A Difference-in-Differences Study of Cursor’s Impact on Software Projects - He, Hao and Miller, Courtney and Agarwal, Shyam and Kästner, Christian and Vasilescu, Bogdan
+

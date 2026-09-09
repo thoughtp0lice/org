@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       efc93f06-9952-450b-996f-b46157f34ab6
+:ROAM_REFS: @viswanathanChecklistsAreBetter2025
+:END:
+#+title: Checklists Are Better Than Reward Models For Aligning Language Models - Viswanathan, Vijay and Sun, Yanchao and Ma, Shuang and Kong, Xiang and Cao, Meng and Neubig, Graham and Wu, Tongshuang
+
+* Approach
+** Checklist
+- Ask LLM to write checklist of the given task
+ 1. Produce potential responses
+ 2. Write checklist based on potential failure case
+- Regularization
+  - To avoid reward hacking ask 2 universal requirement
+    - "The response directly address the request without excessive or off-topic information not necessary for addressing the user’s instruction?"
+    - "The response should match the context and the instruction, whether it requires professionalism, friendliness, formality, or neutrality.”
+** RL training
+- Sample 2 responses for each prompt
+- LLM judge + verifier
+  - LLM judge sample 25 scores
+  - verifier written by LLM
+- Use high score as preferred and low score as rejected. Keep 40% highest difference.

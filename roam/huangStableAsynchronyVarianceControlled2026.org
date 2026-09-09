@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       c089665b-74ad-4d26-993d-31313424bb0a
+:ROAM_REFS: @huangStableAsynchronyVarianceControlled2026
+:END:
+#+title: Stable Asynchrony: Variance-Controlled Off-Policy RL for LLMs - Huang, Luke J. and Zhang, Zhuoyang and Hu, Qinghao and Yang, Shang and Han, Song
+#+STARTUP: latexpreview
+
+A work in [[id:9daa4bc9-099d-4101-a5b6-9233aaca7a95][RL LLM Finetune]]. Async RL collapses because stale rollouts give heavy-tailed importance weights. Fix: scale the lr by ESS and use a closed-form off-policy baseline.
+Beats the clipping/masking stabilizers (TIS, MIS, M2PO) and the objective changes like GSPO [cite:@zhengGroupSequencePolicy2025], which all eventually collapse at 12 steps off-policy on GSM8K, while VCPO holds up to 128.
+
+* Sequence-level IS ratio
+\[
+w(x, y) = \frac{\pi_\theta(y \mid x)}{\mu(y \mid x)} = \prod_{t=1}^{T} \frac{\pi_\theta(y_t \mid x, y_{<t})}{\mu(y_t \mid x, y_{<t})}
+\]
+product over tokens so small per-token shifts blow up (curse of the horizon)
+
+* Effective sample size
+\[
+\mathrm{ESS} \triangleq \frac{\left(\sum_{i=1}^{B} w_i\right)^2}{\sum_{i=1}^{B} w_i^2} = \frac{1}{\sum_i \tilde{w}_i^2} \in [1, B], \quad \tilde{w}_i = \frac{w_i}{\sum_j w_j}
+\]
+\[
+\mathrm{Var}(\hat{g}) \approx \sum_i \tilde{w}_i^2 \, \mathrm{Var}(g) = \frac{1}{\mathrm{ESS}} \mathrm{Var}(g)
+\]
+so a batch of B behaves like a batch of ESS. ESS ratio \(\rho_{\mathrm{ess}} = \mathrm{ESS}/B\) collapsing predicts the KL spike.
+
+* ESS step-size scaling
+Adam sqrt scaling law \(\eta \propto \sqrt{B}\), replace B with ESS
+\[
+\eta_{\mathrm{eff}} = \eta \cdot \sqrt{\frac{\rho^{\mathrm{off}}_{\mathrm{ess}}}{\rho^{\mathrm{on}}_{\mathrm{ess}}}}
+\]
+\(\rho^{\mathrm{on}}_{\mathrm{ess}}\) is a constant from the first on-policy step, since even on-policy has \(\rho < 1\).
+
+* Off-policy optimal baseline (OPOB)
+Estimator with scalar baseline b, \(g_i = \nabla_\theta \log \pi_\theta(\tau_i)\)
+\[
+\hat{G}(b) = \frac{1}{B} \sum_{i=1}^{B} w_i (R_i - b) g_i
+\]
+\(\mathbb{E}_\mu[w g] = \mathbb{E}_{\pi_\theta}[g] = 0\) so b does not change the mean, minimize \(\mathbb{E}\|G(b)\|^2 = \mathbb{E}[w^2 (R-b)^2 \|g\|^2]\), set derivative to zero
+\[
+b^\star_{\mathrm{OPOB}} = \frac{\sum_i w_i^2 \|g_i\|^2 R_i}{\sum_i w_i^2 \|g_i\|^2}
+\]
+- \(w_i = 1\) gives the classic gradient-norm weighted baseline, and if \(\|g_i\|\) is constant in the group it becomes the GRPO group mean [cite:@shaoDeepSeekMathPushingLimits2024]
+- RLOO [cite:@koolBUY4REINFORCE2019] [cite:@ahmadianBackBasicsRevisiting2024] is the other common one, \(b_k = \frac{1}{N-1}\sum_{i \neq k} R_i\), also ignores \(w_i\) and \(\|g_i\|\)
+- needs \(\|g_i\|^2\) per sample, done in one backward by keeping two buffers
+\[
+\hat{G}(b) = \frac{1}{B}\left(G_R - b\, G_S\right), \quad G_R = \sum_i w_i R_i g_i, \quad G_S = \sum_i w_i g_i
+\]
+
+* VCPO loss
+sequence-level TIS with c = 8 plus the two things above
+\[
+L_{\mathrm{VCPO}}(\theta) = -\frac{1}{B} \sum_{i=1}^{B} w^{\mathrm{TIS}}_i \left(R_i - b^\star_{\mathrm{OPOB}}\right) \log \pi_\theta(y_i \mid x_i), \quad w^{\mathrm{TIS}} = \min\left(\mathrm{sg}\left[\frac{\pi_\theta(y \mid x)}{\mu(y \mid x)}\right], c\right)
+\]
+then AdamW with \(\eta_{\mathrm{eff}}\).
+Tool-use eval is SimpleTIR trained on the DAPO [cite:@yuDAPOOpenSourceLLM2025] dataset, 2.5x faster than sync at the same accuracy.

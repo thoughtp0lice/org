@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       8f87fcda-ff08-4672-a780-c955873082d7
+:ROAM_REFS: @sinhaIllusionDiminishingReturns2026
+:END:
+#+title: The Illusion of Diminishing Returns: Measuring Long Horizon Execution in LLMs - Sinha, Akshit and Arun, Arvindh and Goel, Shashwat and Staab, Steffen and Geiping, Jonas
+
+As LLM simple questions over and over again to observe what happens
+
+- Non-diminishing benefits of scaling model size :: small improvement in per step compound to large improvement in long horizon
+- Self-conditioning causes degradation in turn accuracy beyond long-context :: prior failures will cause higher error rate
+- Unlike long-context, scaling model size does not mitigate self-conditioning :: big models still bad
+- Thinking fixes self-conditioning :: models with thinking enabled no longer self-condition, even when the entire prior history has wrong answers, in contrast to non-thinking results.
+- Without CoT, non-thinking models struggle to chain more than a few steps per turn.

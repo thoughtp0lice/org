@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       3885e450-9f92-498c-b833-1a0d8a256817
+:ROAM_REFS: @fengGroupinGroupPolicyOptimization2025
+:END:
+#+title: Group-in-Group Policy Optimization for LLM Agent Training - Feng, Lang and Xue, Zhenghai and Liu, Tingcong and An, Bo
+#+STARTUP: latexpreview
+
+
+GRPO [cite:@shaoDeepSeekMathPushingLimits2024] over whole trajectories, plus a step-level group built for free by matching repeated env states across the N rollouts. Links to [[id:9daa4bc9-099d-4101-a5b6-9233aaca7a95][RL LLM Finetune]] and [[id:9f7ecc43-37a0-47f1-81da-4a335566eca3][LLM Agent]].
+
+* Step Relative Advantage
+- Anchor state :: a state \tilde{s} that shows up in more than one place across the rollouts. Every (action, discounted return) pair taken from the same anchor state forms one group
+
+\[
+G^{S}(\tilde{s}) = \left\{ (a_t^{(i)}, R_t^{(i)}) \mid s_t^{(i)} = \tilde{s},\ 1 \le i \le N,\ 1 \le t \le T \right\}, \quad R_t^{(i)} = \sum_{k=t}^{T} \gamma^{k-t} r_k^{(i)}
+\]
+
+\[
+A^{S}(a_t^{(i)}) = \frac{R_t^{(i)} - \mathrm{mean}\left\{ R_t^{(j)} \mid (a_t^{(j)}, R_t^{(j)}) \in G^{S}(\tilde{s}) \right\}}{F_{\mathrm{norm}}\left\{ R_t^{(j)} \mid (a_t^{(j)}, R_t^{(j)}) \in G^{S}(\tilde{s}) \right\}}
+\]
+
+F_{\mathrm{norm}} is std like GRPO, or 1 which gives leave-one-out [cite:@koolBUY4REINFORCE2019] [cite:@ahmadianBackBasicsRevisiting2024].
+
+* Group-in-Group Advantage
+Episode advantage A^{E}(\tau_i) is plain GRPO on total return R(\tau_i) = \sum_t r_t^{(i)}, same F_{\mathrm{norm}}.
+
+\[
+A(a_t^{(i)}) = A^{E}(\tau_i) + \omega \cdot A^{S}(a_t^{(i)})
+\]
+
+* GiGPO Objective
+\[
+J_{\mathrm{GiGPO}}(\theta) = \mathbb{E}\left[ \frac{1}{NT} \sum_{i=1}^{N} \sum_{t=1}^{T} \min\left( \rho_\theta(a_t^{(i)}) A(a_t^{(i)}),\ \mathrm{clip}(\rho_\theta(a_t^{(i)}), 1 \pm \epsilon) A(a_t^{(i)}) \right) \right] - \beta D_{\mathrm{KL}}(\pi_\theta \,\|\, \pi_{\mathrm{ref}})
+\]
+
+with \(\rho_\theta(a_t^{(i)}) = \frac{\pi_\theta(a_t^{(i)} | s_t^{(i)}, x)}{\pi_{\theta_{old}}(a_t^{(i)} | s_t^{(i)}, x)}\). Same rollout and memory as GRPO.

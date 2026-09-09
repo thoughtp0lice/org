@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       1c244f02-6cbb-48dc-8a4a-e58866874998
+:ROAM_REFS: @zhangOneToolEnough2026
+:END:
+#+title: One Tool Is Enough: Reinforcement Learning for Repository-Level LLM Agents - Zhang, Zhaoxi and Duan, Yitong and Zhang, Yanzhi and Xu, Yiming and Li, Weikang and Liang, Jiahui and Xia, Deguo and Huang, Jizhou and He, Jiyan and Wu, Yunfang
+
+Kind of just RL trained agents to use LSP. Related to CodeScout [cite:@sutawikaCodeScoutEffectiveRecipe2026]

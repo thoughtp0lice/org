@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       69b00142-3ed9-4828-be05-8b650266be46
+:ROAM_REFS: @zhengGroupSequencePolicy2025
+:END:
+#+title: Group Sequence Policy Optimization - Zheng, Chujie and Liu, Shixuan and Li, Mingze and Chen, Xiong-Hui and Yu, Bowen and Gao, Chang and Dang, Kai and Liu, Yuqiong and Men, Rui and Yang, An and Zhou, Jingren and Lin, Junyang
+#+STARTUP: latexpreview
+
+Importance sample over the entire trajectory instead of at each token level
+
+* GSPO
+** Motivation
+- GRPO is unstable. It importance sample at each token level, but importance sample needs multiple sample to work correctly. 
+- GRPO is especially unstable on MoE where at each token the updated policy and old policy can have different experts being activated
+- Routing replay is possible but it needs more memory to train, and also limit the actual capacity of the MoE model.
+** Algorithm
+- GRPO [cite:@shaoDeepSeekMathPushingLimits2024] token ratio, one sample per next-token distribution so it never actually corrects anything
+  \(w_{i,t}(\theta) = \frac{\pi_{\theta}(y_{i,t} \mid x, y_{i,<t})}{\pi_{\theta_{old}}(y_{i,t} \mid x, y_{i,<t})}\)
+- GSPO objective, same shape as GRPO but clip the whole response
+  \(J_{GSPO}(\theta) = \mathbb{E}_{x \sim D,\ \{y_{i}\}_{i=1}^{G} \sim \pi_{\theta_{old}}(\cdot \mid x)}\left[\frac{1}{G}\sum_{i=1}^{G}\min\left(s_{i}(\theta)\hat{A}_{i},\ \mathrm{clip}(s_{i}(\theta), 1-\epsilon, 1+\epsilon)\hat{A}_{i}\right)\right]\)
+- Sequence ratio, length normalized so a few tokens can't blow it up and all lengths share one clip range
+  \(s_{i}(\theta) = \left(\frac{\pi_{\theta}(y_{i} \mid x)}{\pi_{\theta_{old}}(y_{i} \mid x)}\right)^{\frac{1}{|y_{i}|}} = \exp\left(\frac{1}{|y_{i}|}\sum_{t=1}^{|y_{i}|}\log\frac{\pi_{\theta}(y_{i,t} \mid x, y_{i,<t})}{\pi_{\theta_{old}}(y_{i,t} \mid x, y_{i,<t})}\right)\)
+- Group advantage, same as GRPO
+  \(\hat{A}_{i} = \frac{r(x, y_{i}) - \mathrm{mean}\{r(x, y_{i})\}_{i=1}^{G}}{\mathrm{std}\{r(x, y_{i})\}_{i=1}^{G}}\)
+- Gradient. Every token in a response gets the same weight s_{i}, GRPO weights each token by its own w_{i,t}
+  \(\nabla_{\theta} J_{GSPO} = \mathbb{E}\left[\frac{1}{G}\sum_{i=1}^{G} s_{i}(\theta)\hat{A}_{i} \cdot \frac{1}{|y_{i}|}\sum_{t=1}^{|y_{i}|}\nabla_{\theta}\log\pi_{\theta}(y_{i,t} \mid x, y_{i,<t})\right]\)
+- Clip range is tiny, 3e-4 / 4e-4 vs 0.2 / 0.27 for GRPO, clips ~100x more tokens yet trains better
+** GSPO-token
+- Per-token advantages for multi-turn, numerically identical to GSPO when all \hat{A}_{i,t} = \hat{A}_{i}
+  \(s_{i,t}(\theta) = \mathrm{sg}[s_{i}(\theta)] \cdot \frac{\pi_{\theta}(y_{i,t} \mid x, y_{i,<t})}{\mathrm{sg}[\pi_{\theta}(y_{i,t} \mid x, y_{i,<t})]}\)

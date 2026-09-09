@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       7f04b16f-5900-423e-8acf-4bb0f503fb5b
+:ROAM_REFS: @raspantiGrammarConstrainedDecodingMakes
+:END:
+#+title: Grammar-Constrained Decoding Makes Large Language Models Better Logical Parsers - Raspanti, Federico and Ozcelebi, Tanir and Holenderski, Mike
+
+Another [[id:27279185-2be2-402b-a314-9e583cc0ff6c][Contrained LLM Generation]]
+
+Use GCD to genrate a fromal specification of the problem then solve it with a solver

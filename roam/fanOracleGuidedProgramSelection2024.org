@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       672b76de-c3a8-4465-98fc-a7294b59b4fc
+:ROAM_REFS: @fanOracleGuidedProgramSelection2024
+:END:
+#+title: Oracle-Guided Program Selection from Large Language Models - Fan, Zhiyu and Ruan, Haifeng and Mechtaev, Sergey and Roychoudhury, Abhik
+
+Sample multiple implementation of function, and generated tests from prompt and Differential-Testing to group LLM generation by outputs. Ask LLM oracle to pick one output that it think best fit the prompt.

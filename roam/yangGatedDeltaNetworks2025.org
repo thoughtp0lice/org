@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       9a29f4cd-db1f-4ee5-88a5-f2c81b86d741
+:ROAM_REFS: @yangGatedDeltaNetworks2025
+:END:
+#+title: Gated Delta Networks: Improving Mamba2 with Delta Rule - Yang, Songlin and Kautz, Jan and Hatamizadeh, Ali
+
+DeltaNet [cite:@yangParallelizingLinearTransformers2025] only modifies a single key-value pair at a time, the model lacks the ability to rapidly clear outdated or irrelevant information, especially during context switches where previous data needs to be erased.
+
+S_{t} = S_{t-1}(\alpha_{t}_{}(I - \beta_{t}k_{t}k_{k}^{T})) + \beta_{t}v_{t}k_{}_{k}^{T} with \alpha_{t} that controls state decay. the gating term enables adaptive memory management, while the delta update structure facilitates effective key-value association learning.

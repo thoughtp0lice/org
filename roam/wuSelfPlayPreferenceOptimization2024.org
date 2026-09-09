@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       298684b4-18e5-4bb1-bc17-cce76bafdeb7
+:ROAM_REFS: @wuSelfPlayPreferenceOptimization2024
+:END:
+#+title: Self-Play Preference Optimization for Language Model Alignment - Wu, Yue and Sun, Zhiqing and Yuan, Huizhuo and Ji, Kaixuan and Yang, Yiming and Gu, Quanquan
+

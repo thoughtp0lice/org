@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       bc221ecf-f61b-47f1-aab8-d0be65b63aee
+:END:
+#+title: Time Traveling Request
+
+This is a [[id:a23bf13b-4d1d-44a6-8fa0-991370014ec5][Project Idea]]
+
+* Can LLM edits better if we know future requests?
+** Slop Bench [cite:@orlanskiSlopCodeBenchBenchmarkingHow2025] 
+- Slop bench shows that coding agent is really bad at long horizon editing
+- do a function level limitation on slop bench
+** Time traveling request
+- knowing future request can potentially help LLM plan better
+- so one agent could run the prediciton first before doing anything
+- and we maybe can train an agent to do editing given real future requests in training, and do it on predicted request in eval

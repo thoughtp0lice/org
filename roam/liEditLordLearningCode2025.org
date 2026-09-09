@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       6a891301-7136-4661-a8e3-48b842ef5cc8
+:ROAM_REFS: @liEditLordLearningCode2025
+:END:
+#+title: EditLord: Learning Code Transformation Rules for Code Editing - Li, Weichen and Jan, Albert and Ray, Baishakhi and Yang, Junfeng and Mao, Chengzhi and Pei, Kexin
+
